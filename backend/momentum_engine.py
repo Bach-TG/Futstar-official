@@ -1,1 +1,0 @@
-def compute(): print('Momentum calculated')

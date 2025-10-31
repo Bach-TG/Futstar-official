@@ -1,1 +1,0 @@
-Screenshots placeholder for Futstar demo

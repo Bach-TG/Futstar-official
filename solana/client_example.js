@@ -1,1 +1,0 @@
-console.log('Example Solana client call')

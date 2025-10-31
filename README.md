@@ -71,19 +71,19 @@ graph TB
 
 ## Roadmap
 
-### Phase 1: MVP Launch (Q1 2025)
+### Phase 1: MVP Launch (Q4 2025)
 - [ ] Core trading functionality
 - [ ] Integration with top 5 leagues
 - [ ] Mobile app beta
 - [ ] Community building
 
-### Phase 2: Scale (Q2 2025)
+### Phase 2: Scale (Q1 2026)
 - [ ] Influencer partnerships
 - [ ] Tournament campaigns
 - [ ] Social trading features
 - [ ] Additional sports
 
-### Phase 3: Mass Adoption (Q3-Q4 2025)
+### Phase 3: Mass Adoption (Q2-Q3 2026)
 - [ ] Fiat integration
 - [ ] Regulatory compliance
 - [ ] Global expansion

@@ -1,18 +1,18 @@
-# Futstar ⚽ - Football Momentum Trading Platform
+# Futstar - Football Momentum Trading Platform
 
 [![Solana](https://img.shields.io/badge/Solana-Powered-9945FF?style=for-the-badge&logo=solana)](https://solana.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Hackathon](https://img.shields.io/badge/Solana-Cypherpunk%20Hackathon-14F195?style=for-the-badge)](https://solana.com/hackathon)
 
-## 🚀 Bringing Hundreds of Millions of Football Fans to Crypto Through Momentum Betting
+## Bringing Hundreds of Millions of Football Fans to Crypto Through Momentum Betting
 
 Futstar revolutionizes sports engagement by enabling real-time momentum trading during live football matches on the Solana blockchain.
 
-### 📊 What is Match Momentum?
+### What is Match Momentum?
 
 > "Match Momentum measures the swing of the match by comparing each team's threat to see who is more likely to score within that minute." - BBC Sport
 
-## 🎯 Key Features
+## Key Features
 
 - **Real-time Trading**: Long/Short positions in 5-minute windows during live matches
 - **Momentum Index**: 0-100 scale combining possession, shots, xG trend, and field tilt
@@ -21,7 +21,7 @@ Futstar revolutionizes sports engagement by enabling real-time momentum trading 
 - **Mobile-First**: Native Solana app optimized for mobile trading
 - **Live Data**: Powered by StatsPerform match data
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
@@ -35,7 +35,7 @@ graph TB
     H --> A
 ```
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **Blockchain**: Solana
 - **Smart Contracts**: Rust (Anchor Framework)
@@ -44,7 +44,7 @@ graph TB
 - **Data Provider**: StatsPerform
 - **Infrastructure**: AWS, Vercel
 
-## 📱 Product Overview
+## Product Overview
 
 ### Trading Mechanism
 1. **Select Match**: Choose from live football matches
@@ -58,7 +58,7 @@ graph TB
 - No fees on losing trades
 - Premium features for advanced traders
 
-## 🎯 Target Market
+## Target Market
 
 ### Initial Focus: Crypto-Native Sports Fans (1M users)
 - Intersection of Solana traders and football enthusiasts
@@ -69,7 +69,7 @@ graph TB
 - Simplified onboarding via social login
 - Fiat on-ramp integration
 
-## 🚀 Roadmap
+## Roadmap
 
 ### Phase 1: MVP Launch (Q1 2025)
 - [ ] Core trading functionality
@@ -89,16 +89,17 @@ graph TB
 - [ ] Global expansion
 - [ ] DeFi integrations
 
-## 🤝 Team
+## Team
 
 - **Bach "Bastian" Truong** - Founder & Product Lead
-- **Phung Minh Vu** - Blockchain & Tech Lead
+- **Vu Phung Minh** - Blockchain & Tech Lead
+- **Phuong Lan Nguyen** - Marketing & Growth Lead
 
 ### Backed by
 - **A-Star Group Venture Studio** - AI & Web3 builders
 - **Superteam Vietnam** - Leading Solana builder community
 
-## 🛠️ Development Setup
+## Development Setup
 
 ### Prerequisites
 - Node.js 18+
@@ -136,7 +137,7 @@ cd backend && uvicorn main:app --reload
 cd frontend && npm run dev
 ```
 
-## 📄 Smart Contract Addresses
+## Smart Contract Addresses
 
 ### Devnet
 - Program ID: `FuTs...STAR` (To be deployed)
@@ -145,11 +146,10 @@ cd frontend && npm run dev
 ### Mainnet
 - Coming soon
 
-## 🔗 Links
+## Links
 
-- **Website**: [futstar.fun](https://futstar.fun)
 - **Twitter**: [@Futstarfun](https://x.com/Futstarfun)
-- **Telegram**: [Join Alpha Group](https://t.me/futstar_alpha)
+- **Telegram**: [Join Alpha Group](https://t.me/Futstar_fun)
 - **Docs**: [docs.futstar.fun](https://docs.futstar.fun)
 
 ## 📊 Key Metrics Goals
@@ -158,26 +158,27 @@ cd frontend && npm run dev
 - **Year 2**: 100K active traders, $500M volume  
 - **Year 3**: 1M+ active traders, $5B+ volume
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🏆 Hackathon Submission
+## Hackathon Submission
 
 This project is submitted to the **Solana Cypherpunk Hackathon 2025**.
 
 ### Submission Details
 - **Track**: Consumer Applications
 - **Category**: Gaming & Entertainment
-- **Demo Video**: [Watch Demo](https://youtube.com/watch?v=demo)
-- **Pitch Deck**: [View Deck](./docs/pitch-deck.pdf)
+- **Demo Video**: [Watch Demo](https://youtube.com/shorts/GSrLRkVjeDE)
+- **Pitch Video**: [Watch Pitch](https://youtu.be/yb8aPxFDkik)
+- **Pitch Deck**: [View Deck](https://www.canva.com/design/DAG3VGavHXw/RZ7-GN_-Of-_WyL-BuO0nQ/view?utm_content=DAG3VGavHXw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc4fe51adba)
 
 ---
 
-**Join the Momentum Revolution** 🚀⚽
+**Join the Momentum Revolution**
 
 *Built with ❤️ by people who love football and trading*

@@ -1,0 +1,3 @@
+futstar_backend:
+  host: "localhost"
+  port: "8000"

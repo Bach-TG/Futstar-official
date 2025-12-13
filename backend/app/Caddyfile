@@ -1,0 +1,5 @@
+api-dev.futstar.fun {
+    encode gzip
+
+    reverse_proxy futstar-app:8000
+}

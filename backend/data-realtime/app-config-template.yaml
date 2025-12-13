@@ -1,0 +1,8 @@
+mongo:
+  uri: "mongodb://mongodb:mongodb@131.153.239.187:27037/"
+  db_name: "leverkusen-vs-psg"
+
+match:
+  home_team: "Norwich City FC"
+  away_team: "Leicester City FC"
+  url: "https://dataviz.theanalyst.com/opta-football-match-centre/?competitionId=7ntvbsyq31jnzoqoa8850b9b8&seasonId=bmmk637l2a33h90zlu36kx8no&matchId=6nl7r0qss8wbgpflxpj7spmhg#tab-team-stats"

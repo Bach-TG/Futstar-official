@@ -1,0 +1,27 @@
+services:
+  match-status-updater:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: match-status-updater
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - OTEL_PYTHON_LOG_CORRELATION=true
+    volumes:
+      # Mount config để dễ thay đổi mà không cần rebuild
+      - ./app-config.yaml:/app/app-config.yaml:ro
+    networks:
+      - futstar-network
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # Uncomment nếu cần kết nối tới host services
+    # extra_hosts:
+    #   - "host.docker.internal:host-gateway"
+
+networks:
+  futstar-network:
+    driver: bridge

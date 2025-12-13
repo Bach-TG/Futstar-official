@@ -1,0 +1,37 @@
+services:
+  futstar-data:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: futstar/data-aggregator:latest
+    container_name: futstar-data
+
+    # Mở cổng WebSocket/API
+    ports:
+      - "8088:8088"
+      - "8091:8091"
+
+    # ENV sẽ được WebSocket server và crawler đọc
+    environment:
+      MONGO_URI: "mongodb://mongodb:mongodb@131.153.239.187:27037/"
+
+      # Nếu Selenium cần flags từ ENV
+      CHROME_BIN: "/usr/bin/chromium"
+      CHROMEDRIVER: "/usr/bin/chromedriver"
+      DISPLAY: ":99"
+      CHROME_FLAGS: "--headless=new --no-sandbox --disable-dev-shm-usage --disable-gpu --window-size=1920,1080"
+
+    # Chrome cần bộ nhớ share memory lớn để không bị crash
+    shm_size: "2gb"
+
+    deploy:
+      resources:
+        reservations:
+          cpus: "1.0"
+          memory: 1G
+        limits:
+          cpus: "2.0"
+          memory: 2G
+
+    # Luôn restart nếu crash vì Chrome
+    restart: unless-stopped

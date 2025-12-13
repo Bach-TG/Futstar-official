@@ -1,0 +1,166 @@
+import math
+from collections import deque
+from enum import Enum
+from typing import AsyncGenerator, List, Optional
+
+from crawler_v2 import crawl_match_data_stream
+from momentum.calculate import MomentumUsedStats, TeamMomentumStats
+
+
+class LambdaEnumForDuration(float, Enum):
+    FIVE_MINUTES = math.log(2) / 120
+
+
+async def convert_to_seconds(time_in_match: str) -> int:
+    if "+" in time_in_match:
+        main_time, extra_time = time_in_match.split("+")
+        extra_minutes, extra_seconds = extra_time.split(":")
+        return int(main_time) * 60 + int(extra_minutes) * 60 + int(extra_seconds)
+    else:
+        minutes, seconds = time_in_match.split(":")
+        return int(minutes) * 60 + int(seconds)
+
+
+async def calculate_difference_time(
+    previous_time: str, current_time: str, first_half_end_time: Optional[str] = None
+) -> int:
+    previous_seconds = await convert_to_seconds(previous_time)
+    current_seconds = await convert_to_seconds(current_time)
+    if "+" in previous_time and "+" not in current_time:
+        if first_half_end_time:
+            first_half_end_seconds = await convert_to_seconds(first_half_end_time)
+            return (
+                (first_half_end_seconds - previous_seconds)
+                + current_seconds
+                - (await convert_to_seconds("45:00"))
+            )
+        else:
+            return 1
+    return current_seconds - previous_seconds
+
+
+async def calculate_difference_stats(
+    prev: MomentumUsedStats, cur: MomentumUsedStats
+) -> MomentumUsedStats:
+    diffs = {f: getattr(cur, f) - getattr(prev, f) for f in prev.model_fields.keys()}
+    return MomentumUsedStats(**diffs)
+
+
+async def calculate_threat_score(
+    actions: List[TeamMomentumStats],
+    lambda_value: LambdaEnumForDuration,
+    current_time: str,
+) -> float:
+    score = 100.0  # baseline
+
+    for act in actions:
+        s = act.stats
+
+        # Công thức threat (KHÔNG nhân 100)
+        base = 100.0 * (
+            s.goals * 1.0
+            + s.shots_on_target * 0.3
+            + s.shots_inside_box * 0.15
+            + s.shots_headed * 0.1
+            + s.shots_outside_box * 0.04
+            + s.shots_blocked * 0.02
+            + s.key_passes * 0.12
+            + s.through_balls * 0.1
+            + s.penalty_area_entries * 0.08
+            + s.open_play_crosses * 0.03
+            + s.final_thirds_entries * 0.03
+            + s.dribbles_success * 0.04
+            + s.corners_won * 0.03
+            + s.fouls_won * 0.02
+            - s.possession_lost_defensive * 0.2
+            - s.possession_lost_midfield * 0.05
+            - s.offsides * 0.03
+            + s.ball_recoveries_attacking * 0.15
+            + s.interceptions * 0.1
+            + s.tackles * 0.03
+            + s.ball_recoveries_midfield * 0.02
+            + s.ball_recoveries_defensive * 0.02
+            + s.clearances * 0.01
+            - s.fouls_conceded * 0.04
+            - s.cards_yellow * 0.08
+            - s.cards_red * 0.5
+        )
+
+        dt = await calculate_difference_time(act.time_in_match, current_time)
+        decay = math.exp(-lambda_value.value * dt)
+
+        score += base * decay
+
+    return score
+
+
+async def realtime_momentum_loop(
+    match_url: str, db_name: str
+) -> AsyncGenerator[dict, None]:
+    """
+    Chạy song song với crawler để tính momentum liên tục.
+    Yield ra dict data sau mỗi tick (để WS hoặc API dùng).
+    """
+    stream = crawl_match_data_stream(match_url=match_url, db_name=db_name)
+
+    home_window = deque()
+    away_window = deque()
+    prev_home = MomentumUsedStats(**{f: 0 for f in MomentumUsedStats.model_fields})
+    prev_away = MomentumUsedStats(**{f: 0 for f in MomentumUsedStats.model_fields})
+    first_half_end = None
+    lambda_value = LambdaEnumForDuration.FIVE_MINUTES
+    window_seconds = 600
+
+    async for home_tick, away_tick in stream:
+        if "+" in home_tick.time_in_match:
+            first_half_end = home_tick.time_in_match
+
+        delta_home = await calculate_difference_stats(prev_home, home_tick.stats)
+        delta_away = await calculate_difference_stats(prev_away, away_tick.stats)
+        prev_home, prev_away = home_tick.stats, away_tick.stats
+
+        home_window.append(
+            TeamMomentumStats(time_in_match=home_tick.time_in_match, stats=delta_home)
+        )
+        away_window.append(
+            TeamMomentumStats(time_in_match=away_tick.time_in_match, stats=delta_away)
+        )
+
+        # Trim cửa sổ 10 phút
+        while len(home_window) > 1:
+            dt = await calculate_difference_time(
+                home_window[0].time_in_match, home_tick.time_in_match, first_half_end
+            )
+            if dt > window_seconds:
+                home_window.popleft()
+            else:
+                break
+        while len(away_window) > 1:
+            dt = await calculate_difference_time(
+                away_window[0].time_in_match, away_tick.time_in_match, first_half_end
+            )
+            if dt > window_seconds:
+                away_window.popleft()
+            else:
+                break
+
+        home_threat = await calculate_threat_score(
+            list(home_window), lambda_value, home_tick.time_in_match
+        )
+        away_threat = await calculate_threat_score(
+            list(away_window), lambda_value, away_tick.time_in_match
+        )
+        total = home_threat + away_threat
+        momentum_index = (home_threat / total * 100) if total > 0 else 50.0
+
+        data = {
+            "time": home_tick.time_in_match,
+            "home_threat": round(home_threat, 2),
+            "away_threat": round(away_threat, 2),
+            "momentum_index": round(momentum_index, 2),
+        }
+
+        print(
+            f"[{data['time']}] Momentum={data['momentum_index']:.2f} | Home={data['home_threat']:.2f} | Away={data['away_threat']:.2f}"
+        )
+        yield data

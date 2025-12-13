@@ -1,0 +1,347 @@
+import asyncio
+import math
+from collections import deque
+from enum import Enum
+from typing import AsyncGenerator, Optional, Tuple
+
+from crawler_v2 import crawl_match_data_stream
+from momentum.calculate import MomentumUsedStats, TeamMomentumStats
+
+
+# =======================
+# ENUM DECAY
+# =======================
+class LambdaEnumForDuration(float, Enum):
+    FIVE_MINUTES = math.log(2) / 120  # ~0.00577
+
+
+# =======================
+# TIME UTILS
+# =======================
+def to_seconds(t: str) -> int:
+    if "+" in t:
+        main, extra = t.split("+")
+        m, s = extra.split(":")
+        return int(main) * 60 + int(m) * 60 + int(s)
+    m, s = t.split(":")
+    return int(m) * 60 + int(s)
+
+
+def to_timestr(sec: int) -> str:
+    m = sec // 60
+    s = sec % 60
+    return f"{m}:{s:02d}"
+
+
+# =======================
+# FALLBACK MERGE (patch #1)
+# =======================
+def merge_stats(prev: MomentumUsedStats, new: MomentumUsedStats) -> MomentumUsedStats:
+    """Nếu new thiếu field nào (None) thì fallback từ prev."""
+    data = {}
+    for f in prev.model_fields:
+        val = getattr(new, f, None)
+        if val is None:
+            val = getattr(prev, f)
+        data[f] = val
+    return MomentumUsedStats(**data)
+
+
+async def calculate_difference_stats(prev: MomentumUsedStats, cur: MomentumUsedStats):
+    diffs = {f: getattr(cur, f) - getattr(prev, f) for f in prev.model_fields}
+    return MomentumUsedStats(**diffs)
+
+
+async def calculate_threat_score(actions, lambda_value, current_time):
+    score = 100.0
+    cur_sec = to_seconds(current_time)
+
+    for act in actions:
+        s = act.stats
+
+        base = 100.0 * (
+            s.goals * 1.0
+            + s.shots_on_target * 0.3
+            + s.shots_inside_box * 0.15
+            + s.shots_headed * 0.1
+            + s.shots_outside_box * 0.04
+            + s.shots_blocked * 0.02
+            + s.key_passes * 0.12
+            + s.through_balls * 0.1
+            + s.penalty_area_entries * 0.08
+            + s.open_play_crosses * 0.03
+            + s.final_thirds_entries * 0.03
+            + s.dribbles_success * 0.04
+            + s.corners_won * 0.03
+            + s.fouls_won * 0.02
+            - s.possession_lost_defensive * 0.2
+            - s.possession_lost_midfield * 0.05
+            - s.offsides * 0.03
+            + s.ball_recoveries_attacking * 0.15
+            + s.interceptions * 0.1
+            + s.tackles * 0.03
+            + s.ball_recoveries_midfield * 0.02
+            + s.ball_recoveries_defensive * 0.02
+            + s.clearances * 0.01
+            - s.fouls_conceded * 0.04
+            - s.cards_yellow * 0.08
+            - s.cards_red * 0.5
+        )
+
+        dt = cur_sec - to_seconds(act.time_in_match)
+        decay = math.exp(-lambda_value.value * dt)
+        score += base * decay
+
+    return score
+
+
+TickType = Tuple[str, bool, TeamMomentumStats, TeamMomentumStats]
+
+
+# ============================================================
+# REALTIME MOMENTUM — 3 TASK
+# ============================================================
+async def realtime_momentum_loop(
+    match_url: str,
+    db_name: str,
+    speed: float = 1.0,
+) -> AsyncGenerator[dict, None]:
+    # -------------------------------------
+    # Lấy tick đầu tiên từ crawler
+    # -------------------------------------
+    crawler_stream = crawl_match_data_stream(match_url=match_url, db_name=db_name)
+
+    try:
+        first_tick: TickType = await crawler_stream.__anext__()
+    except StopAsyncIteration:
+        print("[RealtimeLoop] ❌ crawler_stream empty.")
+        return
+
+    first_time, first_half, first_home, first_away = first_tick
+    print(f"[RealtimeLoop] First tick: {first_time}")
+
+    start_sec = to_seconds(first_time)
+
+    # -------------------------------------
+    # Queue chia sẻ giữa các task
+    # -------------------------------------
+    data_queue: asyncio.Queue = asyncio.Queue()
+    clock_queue: asyncio.Queue = asyncio.Queue()
+
+    # -------------------------------------
+    # Task A: crawler producer
+    # -------------------------------------
+    async def crawler_producer():
+        try:
+            await data_queue.put(first_tick)
+            async for tick in crawler_stream:
+                print(f"[Crawler→RT] tick: {tick[0]}")
+                await data_queue.put(tick)
+        except Exception as e:
+            print(f"[Crawler] ❌ error: {e}")
+        finally:
+            await data_queue.put(None)
+            print("[Crawler] DONE")
+
+    # -------------------------------------
+    # Task B: Clock Producer — độc lập
+    # -------------------------------------
+    async def clock_producer():
+        sec = start_sec
+        while True:
+            await clock_queue.put(sec)
+            await asyncio.sleep(1 / speed)
+            sec += 1
+
+    task_crawler = asyncio.create_task(crawler_producer())
+    task_clock = asyncio.create_task(clock_producer())
+
+    # -------------------------------------
+    # State consumer
+    # -------------------------------------
+    last_tick = first_tick
+    last_home = first_home
+    last_away = first_away
+
+    pending: Optional[TickType] = None
+    crawler_done = False
+
+    home_window = deque()
+    away_window = deque()
+
+    prev_home = None
+    prev_away = None
+
+    lambda_value = LambdaEnumForDuration.FIVE_MINUTES
+    WINDOW_SECONDS = 600
+
+    try:
+        # ==========================
+        # CONSUMER LOOP
+        # ==========================
+        # ====================================================
+        # 7) Vòng lặp consumer — mỗi lần lấy một sec từ ClockA
+        # ====================================================
+        while True:
+            sec = await clock_queue.get()
+            clock_str = to_timestr(sec)
+            print(f"[ClockA] {clock_str}")
+
+            # ---------------------------------------------------
+            # Drain data_queue lấy tick mới nhất từ crawler
+            # ---------------------------------------------------
+            try:
+                while True:
+                    item = data_queue.get_nowait()
+
+                    if item is None:
+                        crawler_done = True
+                        print("[RealtimeLoop] got crawler DONE sentinel")
+                        break
+
+                    # pending luôn là tick mới nhất
+                    pending = item
+
+                    p_time, p_half, p_home, p_away = pending
+                    print(f"[Crawler→RT] pending tick: {p_time}")
+
+            except asyncio.QueueEmpty:
+                pass
+
+            # ---------------------------------------------------
+            # Áp dụng tick nếu nó không vượt quá ClockA
+            # ---------------------------------------------------
+            if pending is not None:
+                p_time, p_half, p_home, p_away = pending
+                p_sec = to_seconds(p_time)
+
+                if p_sec <= sec:
+                    # Tick hợp lệ theo thời gian hiện tại → sử dụng
+                    print(f"[ApplyTick] Accept tick {p_time} (<= ClockA {clock_str})")
+                    last_tick = pending
+                    last_home = p_home
+                    last_away = p_away
+                    pending = None
+                else:
+                    # Tick tương lai — giữ lại pending, không dùng
+                    print(
+                        f"[FutureTick] Skip tick {p_time} (> ClockA {clock_str}), giữ pending lại"
+                    )
+
+            # ---------------------------------------------------
+            # Unpack last_tick
+            # ---------------------------------------------------
+            try:
+                t_time, t_half, t_home, t_away = last_tick
+            except Exception as e:
+                print(f"[RealtimeLoop] ❌ last_tick unpack failure: {last_tick} | {e}")
+                break
+
+            t_sec = to_seconds(t_time)
+
+            # ---------------------------------------------------
+            # Halftime skip
+            # ---------------------------------------------------
+            if t_half:
+                print("[RealtimeLoop] Halftime → skip output")
+                continue
+
+            # ---------------------------------------------------
+            # FILL MISSING DATA
+            # ClockA vượt qua tick thật → fill
+            # ---------------------------------------------------
+            if sec > t_sec:
+                # Fill bằng stats cũ
+                home_tick = TeamMomentumStats(
+                    time_in_match=clock_str,
+                    stats=last_home.stats,
+                )
+                away_tick = TeamMomentumStats(
+                    time_in_match=clock_str,
+                    stats=last_away.stats,
+                )
+
+                print(f"[ClockA-FILL] {clock_str} fill từ tick {t_time}")
+                print(f"[ClockA-FILL] HOME stats = {home_tick.stats}")
+                print(f"[ClockA-FILL] AWAY stats = {away_tick.stats}")
+
+            else:
+                # sec == t_sec → tick thật
+                home_tick = last_home
+                away_tick = last_away
+                print(f"[TickExact] Using real tick at {clock_str}")
+
+            # ---------------------------------------------------
+            # DELTA
+            # ---------------------------------------------------
+            if prev_home is None:
+                delta_home = home_tick.stats
+                delta_away = away_tick.stats
+            else:
+                delta_home = await calculate_difference_stats(
+                    prev_home, home_tick.stats
+                )
+                delta_away = await calculate_difference_stats(
+                    prev_away, away_tick.stats
+                )
+
+            prev_home = home_tick.stats
+            prev_away = away_tick.stats
+
+            home_window.append(
+                TeamMomentumStats(time_in_match=clock_str, stats=delta_home)
+            )
+            away_window.append(
+                TeamMomentumStats(time_in_match=clock_str, stats=delta_away)
+            )
+
+            # Trim cửa sổ 10 phút
+            while (
+                home_window
+                and sec - to_seconds(home_window[0].time_in_match) > WINDOW_SECONDS
+            ):
+                home_window.popleft()
+
+            while (
+                away_window
+                and sec - to_seconds(away_window[0].time_in_match) > WINDOW_SECONDS
+            ):
+                away_window.popleft()
+
+            # ---------------------------------------------------
+            # Threat score
+            # ---------------------------------------------------
+            home_thr = await calculate_threat_score(
+                home_window, lambda_value, clock_str
+            )
+            away_thr = await calculate_threat_score(
+                away_window, lambda_value, clock_str
+            )
+
+            total = home_thr + away_thr
+            momentum = home_thr / total * 100 if total else 50.0
+
+            # ---------------------------------------------------
+            # Yield to WebSocket
+            # ---------------------------------------------------
+            yield {
+                "time": clock_str,
+                "is_halftime": False,
+                "home_goals": home_tick.stats.goals,
+                "away_goals": away_tick.stats.goals,
+                "home_threat": round(home_thr, 2),
+                "away_threat": round(away_thr, 2),
+                "momentum_index": round(momentum, 2),
+            }
+
+            # ---------------------------------------------------
+            # END condition
+            # ---------------------------------------------------
+            if crawler_done and pending is None and sec == t_sec:
+                print("[RealtimeLoop] END condition met → stop consumer")
+                break
+
+    finally:
+        task_clock.cancel()
+        task_crawler.cancel()
+        print("[RealtimeLoop] CLEANUP done")

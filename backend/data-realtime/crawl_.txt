@@ -1,0 +1,267 @@
+import asyncio
+import os
+import re
+import time
+from typing import Any, AsyncGenerator, Dict
+
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+
+from clients import Clients
+from momentum.calculate import MomentumUsedStats, TeamMomentumStats
+
+mongo_client = Clients.get_mongo_client()
+
+
+# ============================================================
+#  CHROME DRIVER
+# ============================================================
+def make_driver() -> webdriver.Chrome:
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--hide-scrollbars")
+
+    chrome_bin = os.getenv("CHROME_BIN", "/usr/bin/chromium")
+    options.binary_location = chrome_bin
+    service = Service(os.getenv("CHROMEDRIVER", "/usr/bin/chromedriver"))
+
+    return webdriver.Chrome(service=service, options=options)
+
+
+# ============================================================
+# HELPERS
+# ============================================================
+def _to_num(x: str) -> float | int:
+    x = x.strip()
+    if not x:
+        return 0
+    try:
+        return int(x)
+    except Exception:
+        try:
+            return float(x)
+        except Exception:
+            return 0
+
+
+# ============================================================
+#  TAB INDEX CONFIG
+# ============================================================
+TAB_INDEX: Dict[str, int] = {
+    "General": 0,
+    "Distribution": 1,
+    "Attack": 2,
+    "Defence": 3,
+    "Discipline": 4,
+}
+
+
+# ============================================================
+#  CLOCK READER
+# ============================================================
+def get_time_text(driver: webdriver.Chrome) -> str:
+    # reading match clock directly
+    selectors = [
+        ".Opta-ClockContainer .Opta-Clock span",
+        ".Opta-ClockContainer abbr",
+    ]
+
+    for sel in selectors:
+        try:
+            el = driver.find_element("css selector", sel)
+            if el.text.strip():
+                return el.text.strip()
+        except:
+            continue
+
+    return ""
+
+
+# ============================================================
+#  EXECUTE_SCRIPT to get HTML of each tab
+# ============================================================
+def _extract_tab_html(driver, tab_name: str) -> str | None:
+    idx = TAB_INDEX[tab_name] + 1  # nth-child = 1-based
+
+    js = f"""
+        const node = document.querySelector(
+            "ul.Opta-TabbedContent > li:nth-child({idx}) table.Opta-Stats-Bars tbody"
+        );
+        return node ? node.innerHTML : null;
+    """
+    return driver.execute_script(js)
+
+
+def parse_tab_html(html: str) -> dict:
+    stats = {}
+    if not html:
+        return stats
+
+    soup = BeautifulSoup(html, "html.parser")
+    rows = soup.select("tr")
+
+    for row in rows:
+        cls = row.get("class", [])
+        if not cls:
+            continue
+
+        cls = cls[0]
+        if not cls.startswith("Opta-"):
+            continue
+
+        # Opta_shots_on_target → shots_on_target
+        key = cls.split("_", 1)[1] if "_" in cls else cls.replace("Opta-", "")
+
+        tds = row.select("td")
+        if len(tds) < 2:
+            continue
+
+        left = _to_num(tds[0].get_text(strip=True))
+        right = _to_num(tds[-1].get_text(strip=True))
+        stats[key] = (left, right)
+
+    return stats
+
+
+def extract_tab(driver, tab_name: str) -> Dict[str, Any]:
+    html = _extract_tab_html(driver, tab_name)
+    stats = parse_tab_html(html)
+    print(f"[SNAPSHOT_JS] {tab_name}: {stats}")
+    return stats
+
+
+# ============================================================
+#  MAIN CRAWLER STREAM
+# ============================================================
+async def crawl_match_data_stream(
+    match_url: str,
+    db_name: str,
+) -> AsyncGenerator[tuple[str, bool, TeamMomentumStats, TeamMomentumStats], None]:
+    await mongo_client.initialize(db_name=db_name)
+
+    driver = make_driver()
+    driver.get(match_url)
+
+    tabs = ["General", "Distribution", "Attack", "Defence", "Discipline"]
+
+    print("[Crawler] ⚡ Start loop")
+    is_halftime = False
+
+    while True:
+        try:
+            # -----------------------------------
+            # CLOCK
+            # -----------------------------------
+            time_text = get_time_text(driver)
+            if not time_text:
+                await asyncio.sleep(0.1)
+                continue
+
+            if time_text == "FT":
+                print("[Crawler] 🔴 Full-time detected → stopping crawler.")
+                break
+
+            if time_text == "HT":
+                is_halftime = True
+                print("=== HALFTIME DETECTED ===")
+                yield (
+                    "45:00",
+                    True,
+                    TeamMomentumStats(time_in_match="45:00", stats=MomentumUsedStats()),
+                    TeamMomentumStats(time_in_match="45:00", stats=MomentumUsedStats()),
+                )
+                await asyncio.sleep(1)
+                continue
+
+            print(f"\n=== CLOCK: {time_text} ===")
+
+            # -----------------------------------
+            # Extract all tabs
+            # -----------------------------------
+            stats_all = {}
+            for tab in tabs:
+                stats_all[tab] = extract_tab(driver, tab)
+
+            attack = stats_all["Attack"]
+            defence = stats_all["Defence"]
+            discipline = stats_all["Discipline"]
+            distribution = stats_all["Distribution"]
+            general = stats_all["General"]
+
+            # -----------------------------------
+            # Build momentum objects
+            # -----------------------------------
+            def build(idx: int) -> MomentumUsedStats:
+                return MomentumUsedStats(
+                    goals=attack.get("goals", (0, 0))[idx],
+                    shots_on_target=attack.get("shots_on_target", (0, 0))[idx],
+                    shots_inside_box=attack.get("shots_inside_box", (0, 0))[idx],
+                    shots_headed=attack.get("shots_headed", (0, 0))[idx],
+                    shots_outside_box=attack.get("shots_outside_box", (0, 0))[idx],
+                    shots_blocked=attack.get("shots_blocked", (0, 0))[idx],
+                    key_passes=attack.get("key_passes", (0, 0))[idx],
+                    through_balls=distribution.get("through_balls", (0, 0))[idx],
+                    penalty_area_entries=distribution.get(
+                        "penalty_area_entries", (0, 0)
+                    )[idx],
+                    open_play_crosses=distribution.get("open_play_crosses", (0, 0))[
+                        idx
+                    ],
+                    final_thirds_entries=distribution.get(
+                        "final_thirds_entries", (0, 0)
+                    )[idx],
+                    dribbles_success=general.get("dribbles_success", (0, 0))[idx],
+                    corners_won=general.get("corners_won", (0, 0))[idx],
+                    possession_lost_defensive=general.get(
+                        "possession_lost_defensive", (0, 0)
+                    )[idx],
+                    possession_lost_midfield=general.get(
+                        "possession_lost_midfield", (0, 0)
+                    )[idx],
+                    offsides=general.get("offsides", (0, 0))[idx],
+                    ball_recoveries_attacking=defence.get(
+                        "ball_recoveries_attacking", (0, 0)
+                    )[idx],
+                    interceptions=defence.get("interceptions", (0, 0))[idx],
+                    tackles=defence.get("tackles", (0, 0))[idx],
+                    ball_recoveries_midfield=defence.get(
+                        "ball_recoveries_midfield", (0, 0)
+                    )[idx],
+                    ball_recoveries_defensive=defence.get(
+                        "ball_recoveries_defensive", (0, 0)
+                    )[idx],
+                    clearances=defence.get("clearances", (0, 0))[idx],
+                    fouls_conceded=discipline.get("fouls_conceded", (0, 0))[idx],
+                    fouls_won=general.get("fouls_won", (0, 0))[idx],
+                    cards_yellow=discipline.get("cards_yellow", (0, 0))[idx],
+                    cards_red=discipline.get("cards_red", (0, 0))[idx],
+                )
+
+            home = build(0)
+            away = build(1)
+
+            # -----------------------------------
+            # YIELD TICK
+            # -----------------------------------
+            yield (
+                time_text,
+                False,
+                TeamMomentumStats(time_in_match=time_text, stats=home),
+                TeamMomentumStats(time_in_match=time_text, stats=away),
+            )
+
+            await asyncio.sleep(0.85)
+
+        except Exception as e:
+            print(f"[Crawler] ⚠ Soft error: {e}")
+            await asyncio.sleep(0.5)
+
+    driver.quit()
+    print("[Crawler] Chrome closed.")
+sau phút 45 và trước khi đánh dấu HT thì sẽ là bù giờ nhưng nguồn crawl thì lại là ví dụ 45:15 thay vì 45:00 + 0:15 nên tôi muốn để form 45:00 + 0:15, tương tự với FT, và khi HT hay FT thì trả về HT FT 

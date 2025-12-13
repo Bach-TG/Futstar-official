@@ -1,0 +1,3512 @@
+[
+    {
+        "time_in_match": "0:00",
+        "home_team_threat": 100.0,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.0
+    },
+    {
+        "time_in_match": "0:00",
+        "home_team_threat": 100.0,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.0
+    },
+    {
+        "time_in_match": "0:05",
+        "home_team_threat": 100.06,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.01499550134959
+    },
+    {
+        "time_in_match": "0:10",
+        "home_team_threat": 100.0586357490264,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.014654640827395
+    },
+    {
+        "time_in_match": "0:15",
+        "home_team_threat": 100.05730251773144,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.01432152613533
+    },
+    {
+        "time_in_match": "0:20",
+        "home_team_threat": 100.0559996008047,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.013995981354334
+    },
+    {
+        "time_in_match": "0:25",
+        "home_team_threat": 100.0547263089727,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.013677834556184
+    },
+    {
+        "time_in_match": "0:29",
+        "home_team_threat": 100.05372855239797,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.01342853062194
+    },
+    {
+        "time_in_match": "0:34",
+        "home_team_threat": 100.052506898566,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.01312327932802
+    },
+    {
+        "time_in_match": "0:39",
+        "home_team_threat": 100.05131302210783,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.01282496508838
+    },
+    {
+        "time_in_match": "0:44",
+        "home_team_threat": 100.05014629143501,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.012533430333505
+    },
+    {
+        "time_in_match": "0:49",
+        "home_team_threat": 100.0490060893198,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.01224852106937
+    },
+    {
+        "time_in_match": "0:54",
+        "home_team_threat": 100.04789181256868,
+        "away_team_threat": 100.0,
+        "momentum_index": 50.011970086796396
+    },
+    {
+        "time_in_match": "0:58",
+        "home_team_threat": 100.04701866084763,
+        "away_team_threat": 99.8,
+        "momentum_index": 50.06180193792804
+    },
+    {
+        "time_in_match": "1:03",
+        "home_team_threat": 100.04594957328365,
+        "away_team_threat": 99.80454750324535,
+        "momentum_index": 50.06039566415136
+    },
+    {
+        "time_in_match": "1:08",
+        "home_team_threat": 100.0449047941155,
+        "away_team_threat": 99.80899160756185,
+        "momentum_index": 50.059021412842384
+    },
+    {
+        "time_in_match": "1:13",
+        "home_team_threat": 100.04388377063064,
+        "away_team_threat": 99.81333466398436,
+        "momentum_index": 50.057678453761156
+    },
+    {
+        "time_in_match": "1:18",
+        "home_team_threat": 100.04288596268384,
+        "away_team_threat": 99.81757897009098,
+        "momentum_index": 50.0563660733674
+    },
+    {
+        "time_in_match": "1:23",
+        "home_team_threat": 100.04191084241141,
+        "away_team_threat": 99.82172677121864,
+        "momentum_index": 50.0550835744365
+    },
+    {
+        "time_in_match": "1:27",
+        "home_team_threat": 100.00114673426391,
+        "away_team_threat": 99.79497700478004,
+        "momentum_index": 50.0515950273773
+    },
+    {
+        "time_in_match": "1:32",
+        "home_team_threat": 100.00112066037498,
+        "away_team_threat": 99.79963871846071,
+        "momentum_index": 50.0504207147512
+    },
+    {
+        "time_in_match": "1:37",
+        "home_team_threat": 100.00109517934153,
+        "away_team_threat": 99.80419443635091,
+        "momentum_index": 50.049273155723085
+    },
+    {
+        "time_in_match": "1:42",
+        "home_team_threat": 100.00107027768348,
+        "away_team_threat": 99.80864656853167,
+        "momentum_index": 50.048151739612315
+    },
+    {
+        "time_in_match": "1:47",
+        "home_team_threat": 100.00104594222728,
+        "away_team_threat": 99.81299747028471,
+        "momentum_index": 50.04705586973043
+    },
+    {
+        "time_in_match": "1:52",
+        "home_team_threat": 100.00102216009893,
+        "away_team_threat": 99.81724944333855,
+        "momentum_index": 50.045984963058096
+    },
+    {
+        "time_in_match": "1:56",
+        "home_team_threat": 100.00100352432797,
+        "away_team_threat": 99.82058130643819,
+        "momentum_index": 50.04514582797515
+    },
+    {
+        "time_in_match": "2:01",
+        "home_team_threat": 100.00098070667727,
+        "away_team_threat": 99.82466084189441,
+        "momentum_index": 50.044118428299896
+    },
+    {
+        "time_in_match": "2:06",
+        "home_team_threat": 100.00095840784329,
+        "away_team_threat": 99.82864761884703,
+        "momentum_index": 50.04311442944376
+    },
+    {
+        "time_in_match": "2:11",
+        "home_team_threat": 100.00093661602939,
+        "away_team_threat": 99.83254374639398,
+        "momentum_index": 50.042133297516024
+    },
+    {
+        "time_in_match": "2:16",
+        "home_team_threat": 100.03091531970723,
+        "away_team_threat": 99.83635128567761,
+        "momentum_index": 50.048673311376646
+    },
+    {
+        "time_in_match": "2:20",
+        "home_team_threat": 100.0303516792192,
+        "away_team_threat": 99.83933488869646,
+        "momentum_index": 50.047785332984404
+    },
+    {
+        "time_in_match": "2:25",
+        "home_team_threat": 100.02966155742044,
+        "away_team_threat": 99.84298801427178,
+        "momentum_index": 50.046698120915664
+    },
+    {
+        "time_in_match": "2:30",
+        "home_team_threat": 100.02898712727728,
+        "away_team_threat": 99.84655807684507,
+        "momentum_index": 50.0456356604921
+    },
+    {
+        "time_in_match": "2:35",
+        "home_team_threat": 100.02832803200045,
+        "away_team_threat": 99.85004696506267,
+        "momentum_index": 50.044597387521385
+    },
+    {
+        "time_in_match": "2:40",
+        "home_team_threat": 100.02768392291317,
+        "away_team_threat": 99.8534565246278,
+        "momentum_index": 50.043582750702555
+    },
+    {
+        "time_in_match": "2:45",
+        "home_team_threat": 100.02705445926671,
+        "away_team_threat": 99.85678855927699,
+        "momentum_index": 50.042591211330155
+    },
+    {
+        "time_in_match": "2:49",
+        "home_team_threat": 100.02656120903448,
+        "away_team_threat": 99.85939955496153,
+        "momentum_index": 50.04181425584719
+    },
+    {
+        "time_in_match": "2:54",
+        "home_team_threat": 100.02595727311308,
+        "away_team_threat": 99.86259645986208,
+        "momentum_index": 50.040862973442
+    },
+    {
+        "time_in_match": "2:59",
+        "home_team_threat": 100.02536706919446,
+        "away_team_threat": 99.89572067508557,
+        "momentum_index": 50.03242439193676
+    },
+    {
+        "time_in_match": "3:04",
+        "home_team_threat": 100.02479028504703,
+        "away_team_threat": 99.89809172792792,
+        "momentum_index": 50.03168685741307
+    },
+    {
+        "time_in_match": "3:09",
+        "home_team_threat": 100.02422661553851,
+        "away_team_threat": 99.90040886891781,
+        "momentum_index": 50.03096610538284
+    },
+    {
+        "time_in_match": "3:14",
+        "home_team_threat": 100.02367576247458,
+        "away_team_threat": 99.90267332387681,
+        "momentum_index": 50.030261753678474
+    },
+    {
+        "time_in_match": "3:18",
+        "home_team_threat": 100.0432441118094,
+        "away_team_threat": 99.93444775984412,
+        "momentum_index": 50.02720212213349
+    },
+    {
+        "time_in_match": "3:23",
+        "home_team_threat": 100.04226084811543,
+        "away_team_threat": 99.93593825496835,
+        "momentum_index": 50.0265835460125
+    },
+    {
+        "time_in_match": "3:28",
+        "home_team_threat": 100.04129994139565,
+        "away_team_threat": 99.93739485993551,
+        "momentum_index": 50.02597903780784
+    },
+    {
+        "time_in_match": "3:33",
+        "home_team_threat": 100.040360883308,
+        "away_team_threat": 99.93881834532361,
+        "momentum_index": 50.025388277513706
+    },
+    {
+        "time_in_match": "3:38",
+        "home_team_threat": 100.03944317706885,
+        "away_team_threat": 99.94020946418959,
+        "momentum_index": 50.02481095240656
+    },
+    {
+        "time_in_match": "3:43",
+        "home_team_threat": 100.03854633719021,
+        "away_team_threat": 99.94156895246779,
+        "momentum_index": 50.0242467568793
+    },
+    {
+        "time_in_match": "3:47",
+        "home_team_threat": 100.04784356987255,
+        "away_team_threat": 99.91263425292269,
+        "momentum_index": 50.03380901026594
+    },
+    {
+        "time_in_match": "3:52",
+        "home_team_threat": 100.04675572592623,
+        "away_team_threat": 99.91462073301452,
+        "momentum_index": 50.03304012886179
+    },
+    {
+        "time_in_match": "3:57",
+        "home_team_threat": 100.04569261684928,
+        "away_team_threat": 99.91656204548303,
+        "momentum_index": 50.03228873658788
+    },
+    {
+        "time_in_match": "4:02",
+        "home_team_threat": 100.04465368023223,
+        "away_team_threat": 99.91845921732778,
+        "momentum_index": 50.03155443548458
+    },
+    {
+        "time_in_match": "4:07",
+        "home_team_threat": 100.04363836645337,
+        "away_team_threat": 99.92031325219693,
+        "momentum_index": 50.030836836654345
+    },
+    {
+        "time_in_match": "4:12",
+        "home_team_threat": 100.04264613838802,
+        "away_team_threat": 99.92212513091818,
+        "momentum_index": 50.030135560055115
+    },
+    {
+        "time_in_match": "4:16",
+        "home_team_threat": 100.04186862450554,
+        "away_team_threat": 99.92354492633451,
+        "momentum_index": 50.029586040923256
+    },
+    {
+        "time_in_match": "4:21",
+        "home_team_threat": 100.06091663597644,
+        "away_team_threat": 100.10528332481259,
+        "momentum_index": 49.98891753731529
+    },
+    {
+        "time_in_match": "4:26",
+        "home_team_threat": 100.05953154297745,
+        "away_team_threat": 100.10288944350627,
+        "momentum_index": 49.989169320516034
+    },
+    {
+        "time_in_match": "4:31",
+        "home_team_threat": 100.05817794355302,
+        "away_team_threat": 100.10054999311498,
+        "momentum_index": 49.98941538797764
+    },
+    {
+        "time_in_match": "4:36",
+        "home_team_threat": 100.05685512161745,
+        "away_team_threat": 100.09826373601493,
+        "momentum_index": 49.989655869249354
+    },
+    {
+        "time_in_match": "4:41",
+        "home_team_threat": 100.0555623773671,
+        "away_team_threat": 100.09602946272277,
+        "momentum_index": 49.9898908909533
+    },
+    {
+        "time_in_match": "4:45",
+        "home_team_threat": 99.85454937779947,
+        "away_team_threat": 100.27427867723044,
+        "momentum_index": 49.895135222768715
+    },
+    {
+        "time_in_match": "4:50",
+        "home_team_threat": 99.81785656368196,
+        "away_team_threat": 100.28804226135627,
+        "momentum_index": 49.88251578278424
+    },
+    {
+        "time_in_match": "4:55",
+        "home_team_threat": 99.82199805302083,
+        "away_team_threat": 100.2814928957647,
+        "momentum_index": 49.88518570051797
+    },
+    {
+        "time_in_match": "4:60",
+        "home_team_threat": 99.82604537517867,
+        "away_team_threat": 100.27509244647953,
+        "momentum_index": 49.887794973034815
+    },
+    {
+        "time_in_match": "5:05",
+        "home_team_threat": 99.83000067128326,
+        "away_team_threat": 100.26883752751385,
+        "momentum_index": 49.89034497646742
+    },
+    {
+        "time_in_match": "5:10",
+        "home_team_threat": 99.83386603377848,
+        "away_team_threat": 100.26272482986965,
+        "momentum_index": 49.892837055783865
+    },
+    {
+        "time_in_match": "5:14",
+        "home_team_threat": 99.8368949472973,
+        "away_team_threat": 100.2579348955352,
+        "momentum_index": 49.89478989822761
+    },
+    {
+        "time_in_match": "5:19",
+        "home_team_threat": 99.84060355107981,
+        "away_team_threat": 100.25207009666254,
+        "momentum_index": 49.89718100666017
+    },
+    {
+        "time_in_match": "5:24",
+        "home_team_threat": 99.8442278304236,
+        "away_team_threat": 100.24633864874939,
+        "momentum_index": 49.89951779701528
+    },
+    {
+        "time_in_match": "5:29",
+        "home_team_threat": 99.84776970265702,
+        "away_team_threat": 100.24073751972618,
+        "momentum_index": 49.901801502114154
+    },
+    {
+        "time_in_match": "5:34",
+        "home_team_threat": 99.85123104151306,
+        "away_team_threat": 100.23526374646502,
+        "momentum_index": 49.90403332684724
+    },
+    {
+        "time_in_match": "5:38",
+        "home_team_threat": 99.85394336049148,
+        "away_team_threat": 100.44097447583383,
+        "momentum_index": 49.853458309955215
+    },
+    {
+        "time_in_match": "5:43",
+        "home_team_threat": 99.85726432570233,
+        "away_team_threat": 100.43094781153397,
+        "momentum_index": 49.85678550931431
+    },
+    {
+        "time_in_match": "5:48",
+        "home_team_threat": 99.86050978041281,
+        "away_team_threat": 100.42114912867633,
+        "momentum_index": 49.86003727168098
+    },
+    {
+        "time_in_match": "5:53",
+        "home_team_threat": 99.86368144154416,
+        "away_team_threat": 100.41157324352919,
+        "momentum_index": 49.86321530264771
+    },
+    {
+        "time_in_match": "5:58",
+        "home_team_threat": 99.86678098697904,
+        "away_team_threat": 100.40221509022595,
+        "momentum_index": 49.86632126945888
+    },
+    {
+        "time_in_match": "6:03",
+        "home_team_threat": 99.86981005644932,
+        "away_team_threat": 100.39306971808533,
+        "momentum_index": 49.86935680186335
+    },
+    {
+        "time_in_match": "6:07",
+        "home_team_threat": 99.87218364740731,
+        "away_team_threat": 100.49590336787992,
+        "momentum_index": 49.84435652159892
+    },
+    {
+        "time_in_match": "6:12",
+        "home_team_threat": 99.8750898737984,
+        "away_team_threat": 102.15462775700585,
+        "momentum_index": 49.43584094707958
+    },
+    {
+        "time_in_match": "6:17",
+        "home_team_threat": 99.87793001981979,
+        "away_team_threat": 102.1056368734184,
+        "momentum_index": 49.448542550301596
+    },
+    {
+        "time_in_match": "6:22",
+        "home_team_threat": 99.88070558797494,
+        "away_team_threat": 102.05775992084148,
+        "momentum_index": 49.4609609597208
+    },
+    {
+        "time_in_match": "6:27",
+        "home_team_threat": 99.88341804660412,
+        "away_team_threat": 102.01097157125065,
+        "momentum_index": 49.47310236587714
+    },
+    {
+        "time_in_match": "6:32",
+        "home_team_threat": 99.88606883066119,
+        "away_team_threat": 101.96524707251784,
+        "momentum_index": 49.484972829492484
+    },
+    {
+        "time_in_match": "6:36",
+        "home_team_threat": 99.88814599565568,
+        "away_team_threat": 101.92941717234037,
+        "momentum_index": 49.49427811320229
+    },
+    {
+        "time_in_match": "6:41",
+        "home_team_threat": 99.89068927789448,
+        "away_team_threat": 101.88554701807614,
+        "momentum_index": 49.50567574834344
+    },
+    {
+        "time_in_match": "6:46",
+        "home_team_threat": 99.8931747322121,
+        "away_team_threat": 101.8426743621564,
+        "momentum_index": 49.516818741265865
+    },
+    {
+        "time_in_match": "6:51",
+        "home_team_threat": 99.89560367347185,
+        "away_team_threat": 101.8007765239463,
+        "momentum_index": 49.52771268165307
+    },
+    {
+        "time_in_match": "6:56",
+        "home_team_threat": 99.89797738664028,
+        "away_team_threat": 101.75983133851237,
+        "momentum_index": 49.53836304092501
+    },
+    {
+        "time_in_match": "7:01",
+        "home_team_threat": 99.90029712746707,
+        "away_team_threat": 101.71981714489664,
+        "momentum_index": 49.54877517454146
+    },
+    {
+        "time_in_match": "7:05",
+        "home_team_threat": 99.70211488566153,
+        "away_team_threat": 101.68846186265918,
+        "momentum_index": 49.506842125120876
+    },
+    {
+        "time_in_match": "7:10",
+        "home_team_threat": 99.70888805328254,
+        "away_team_threat": 101.65007043365875,
+        "momentum_index": 49.517979633247336
+    },
+    {
+        "time_in_match": "7:15",
+        "home_team_threat": 99.71550721589477,
+        "away_team_threat": 101.61255193039821,
+        "momentum_index": 49.52886728195075
+    },
+    {
+        "time_in_match": "7:20",
+        "home_team_threat": 99.72197587518977,
+        "away_team_threat": 101.57588650471435,
+        "momentum_index": 49.539510601949225
+    },
+    {
+        "time_in_match": "7:25",
+        "home_team_threat": 99.72829745323908,
+        "away_team_threat": 101.57005475974194,
+        "momentum_index": 49.542530456346164
+    },
+    {
+        "time_in_match": "7:30",
+        "home_team_threat": 99.73447529430489,
+        "away_team_threat": 101.53435561416546,
+        "momentum_index": 49.552866603403906
+    },
+    {
+        "time_in_match": "7:34",
+        "home_team_threat": 99.73931627528522,
+        "away_team_threat": 101.53638162083855,
+        "momentum_index": 49.5535811416039
+    },
+    {
+        "time_in_match": "7:39",
+        "home_team_threat": 99.74524357570596,
+        "away_team_threat": 101.5014481188043,
+        "momentum_index": 49.563668717157285
+    },
+    {
+        "time_in_match": "7:44",
+        "home_team_threat": 99.75103610403721,
+        "away_team_threat": 101.4673089178394,
+        "momentum_index": 49.57352973616407
+    },
+    {
+        "time_in_match": "7:49",
+        "home_team_threat": 99.75669692466153,
+        "away_team_threat": 101.43394595751043,
+        "momentum_index": 49.58316922476578
+    },
+    {
+        "time_in_match": "7:54",
+        "home_team_threat": 99.76222903228506,
+        "away_team_threat": 101.20134158803327,
+        "momentum_index": 49.64194690826152
+    },
+    {
+        "time_in_match": "7:59",
+        "home_team_threat": 99.73763535352171,
+        "away_team_threat": 101.20402606418153,
+        "momentum_index": 49.63512028806918
+    },
+    {
+        "time_in_match": "8:03",
+        "home_team_threat": 99.7724187210814,
+        "away_team_threat": 101.13207455778117,
+        "momentum_index": 49.66161636942273
+    },
+    {
+        "time_in_match": "8:08",
+        "home_team_threat": 99.75759335410369,
+        "away_team_threat": 101.10633399415373,
+        "momentum_index": 49.66426509282784
+    },
+    {
+        "time_in_match": "8:13",
+        "home_team_threat": 99.84310507914823,
+        "away_team_threat": 101.0911787070095,
+        "momentum_index": 49.68943238447315
+    },
+    {
+        "time_in_match": "8:18",
+        "home_team_threat": 99.84667247995698,
+        "away_team_threat": 101.08636801345259,
+        "momentum_index": 49.69151526039435
+    },
+    {
+        "time_in_match": "8:23",
+        "home_team_threat": 99.85015876693195,
+        "away_team_threat": 101.06166670311858,
+        "momentum_index": 49.69849760377414
+    },
+    {
+        "time_in_match": "8:28",
+        "home_team_threat": 99.85356578440032,
+        "away_team_threat": 101.06752703922902,
+        "momentum_index": 49.6979009924323
+    },
+    {
+        "time_in_match": "8:32",
+        "home_team_threat": 99.85623553692191,
+        "away_team_threat": 101.12806414940351,
+        "momentum_index": 49.68360000893938
+    },
+    {
+        "time_in_match": "8:37",
+        "home_team_threat": 99.85950438373398,
+        "away_team_threat": 101.13241477250162,
+        "momentum_index": 49.68334289405481
+    },
+    {
+        "time_in_match": "8:42",
+        "home_team_threat": 99.8626989050886,
+        "away_team_threat": 101.1066664732365,
+        "momentum_index": 49.69050816132943
+    },
+    {
+        "time_in_match": "8:47",
+        "home_team_threat": 99.86582079096209,
+        "away_team_threat": 101.08150362634375,
+        "momentum_index": 49.697512062201675
+    },
+    {
+        "time_in_match": "8:52",
+        "home_team_threat": 99.86887169290488,
+        "away_team_threat": 101.05691292009048,
+        "momentum_index": 49.7043581963674
+    },
+    {
+        "time_in_match": "8:56",
+        "home_team_threat": 99.87126239187572,
+        "away_team_threat": 101.0376435442686,
+        "momentum_index": 49.70972388034316
+    },
+    {
+        "time_in_match": "9:01",
+        "home_team_threat": 99.87418956532942,
+        "away_team_threat": 101.01405010734328,
+        "momentum_index": 49.71629485532076
+    },
+    {
+        "time_in_match": "9:06",
+        "home_team_threat": 99.87705018212925,
+        "away_team_threat": 100.99099312657282,
+        "momentum_index": 49.722717728988975
+    },
+    {
+        "time_in_match": "9:11",
+        "home_team_threat": 99.87984575560817,
+        "away_team_threat": 100.96846040427677,
+        "momentum_index": 49.7289958104496
+    },
+    {
+        "time_in_match": "9:16",
+        "home_team_threat": 99.88257776468973,
+        "away_team_threat": 100.94644002011964,
+        "momentum_index": 49.73513233616224
+    },
+    {
+        "time_in_match": "9:21",
+        "home_team_threat": 99.88524765467047,
+        "away_team_threat": 100.92492032480452,
+        "momentum_index": 49.74113047148083
+    },
+    {
+        "time_in_match": "9:25",
+        "home_team_threat": 99.88733979114318,
+        "away_team_threat": 101.06805740544276,
+        "momentum_index": 49.70622396044817
+    },
+    {
+        "time_in_match": "9:30",
+        "home_team_threat": 99.91990140447017,
+        "away_team_threat": 101.04377243285546,
+        "momentum_index": 49.72037955742811
+    },
+    {
+        "time_in_match": "9:35",
+        "home_team_threat": 99.75172264758577,
+        "away_team_threat": 101.02003964022639,
+        "momentum_index": 49.684139597573875
+    },
+    {
+        "time_in_match": "9:40",
+        "home_team_threat": 99.757367857915,
+        "away_team_threat": 101.0168464723548,
+        "momentum_index": 49.68634452919139
+    },
+    {
+        "time_in_match": "9:45",
+        "home_team_threat": 99.76288471018277,
+        "away_team_threat": 100.99372590918954,
+        "momentum_index": 49.693449397454614
+    },
+    {
+        "time_in_match": "9:50",
+        "home_team_threat": 99.76827612293259,
+        "away_team_threat": 100.97113105020445,
+        "momentum_index": 49.70039392259578
+    },
+    {
+        "time_in_match": "9:54",
+        "home_team_threat": 99.77250085553754,
+        "away_team_threat": 100.95342562828844,
+        "momentum_index": 49.705836512144316
+    },
+    {
+        "time_in_match": "9:59",
+        "home_team_threat": 99.77767362102632,
+        "away_team_threat": 100.93174709759428,
+        "momentum_index": 49.71250141811085
+    },
+    {
+        "time_in_match": "10:04",
+        "home_team_threat": 99.78272877067589,
+        "away_team_threat": 100.91056148284353,
+        "momentum_index": 49.7190158398562
+    },
+    {
+        "time_in_match": "10:09",
+        "home_team_threat": 99.78394070787179,
+        "away_team_threat": 100.88985757635197,
+        "momentum_index": 49.72444911145953
+    },
+    {
+        "time_in_match": "10:14",
+        "home_team_threat": 99.78885335953248,
+        "away_team_threat": 100.86962442527015,
+        "momentum_index": 49.73069389400612
+    },
+    {
+        "time_in_match": "10:19",
+        "home_team_threat": 99.79365430969634,
+        "away_team_threat": 100.84985132578943,
+        "momentum_index": 49.73679760709227
+    },
+    {
+        "time_in_match": "10:23",
+        "home_team_threat": 99.79741635345619,
+        "away_team_threat": 100.8643570459126,
+        "momentum_index": 49.73414450735145
+    },
+    {
+        "time_in_match": "10:28",
+        "home_team_threat": 99.80202260240671,
+        "away_team_threat": 100.84470371355548,
+        "momentum_index": 49.740169916974665
+    },
+    {
+        "time_in_match": "10:33",
+        "home_team_threat": 99.90652411669703,
+        "away_team_threat": 100.92549724916172,
+        "momentum_index": 49.74631208570858
+    },
+    {
+        "time_in_match": "10:38",
+        "home_team_threat": 99.91864952611041,
+        "away_team_threat": 100.90445374044117,
+        "momentum_index": 49.754559062603896
+    },
+    {
+        "time_in_match": "10:43",
+        "home_team_threat": 99.92049923383053,
+        "away_team_threat": 100.91388870884151,
+        "momentum_index": 49.75268441694991
+    },
+    {
+        "time_in_match": "10:48",
+        "home_team_threat": 99.92230688379136,
+        "away_team_threat": 100.89310914949482,
+        "momentum_index": 49.75828492531108
+    },
+    {
+        "time_in_match": "10:52",
+        "home_team_threat": 99.9237233655341,
+        "away_team_threat": 100.8768262036396,
+        "momentum_index": 49.76267424562572
+    },
+    {
+        "time_in_match": "10:57",
+        "home_team_threat": 99.925457706748,
+        "away_team_threat": 100.8568893536063,
+        "momentum_index": 49.76804941756699
+    },
+    {
+        "time_in_match": "11:02",
+        "home_team_threat": 99.9271526133504,
+        "away_team_threat": 100.84983338771237,
+        "momentum_index": 49.770222476007014
+    },
+    {
+        "time_in_match": "11:07",
+        "home_team_threat": 99.92880898198642,
+        "away_team_threat": 100.83051028726923,
+        "momentum_index": 49.775427285626165
+    },
+    {
+        "time_in_match": "11:12",
+        "home_team_threat": 99.9504276889137,
+        "away_team_threat": 100.761626546136,
+        "momentum_index": 49.797919746197124
+    },
+    {
+        "time_in_match": "11:17",
+        "home_team_threat": 99.95155484014143,
+        "away_team_threat": 100.7443090501845,
+        "momentum_index": 49.80249861788973
+    },
+    {
+        "time_in_match": "11:21",
+        "home_team_threat": 99.75243808035383,
+        "away_team_threat": 100.91073899105949,
+        "momentum_index": 49.71138179719605
+    },
+    {
+        "time_in_match": "11:26",
+        "home_team_threat": 99.77806702351891,
+        "away_team_threat": 100.89003104847194,
+        "momentum_index": 49.722934528299035
+    },
+    {
+        "time_in_match": "11:31",
+        "home_team_threat": 99.78559874211051,
+        "away_team_threat": 100.8716580885183,
+        "momentum_index": 49.729374515638746
+    },
+    {
+        "time_in_match": "11:36",
+        "home_team_threat": 99.79047369419082,
+        "away_team_threat": 100.8518387485865,
+        "momentum_index": 49.735508168373414
+    },
+    {
+        "time_in_match": "11:41",
+        "home_team_threat": 99.7952378019691,
+        "away_team_threat": 100.83247005121794,
+        "momentum_index": 49.741503239919425
+    },
+    {
+        "time_in_match": "11:46",
+        "home_team_threat": 99.79989358576942,
+        "away_team_threat": 100.81354174992009,
+        "momentum_index": 49.74736284176219
+    },
+    {
+        "time_in_match": "11:50",
+        "home_team_threat": 99.80354187658588,
+        "away_team_threat": 100.79870945727988,
+        "momentum_index": 49.751955031891015
+    },
+    {
+        "time_in_match": "11:55",
+        "home_team_threat": 99.82800884635492,
+        "away_team_threat": 100.78054878803457,
+        "momentum_index": 49.76258741079838
+    },
+    {
+        "time_in_match": "12:00",
+        "home_team_threat": 99.83191949800177,
+        "away_team_threat": 100.76280104730087,
+        "momentum_index": 49.76796957896784
+    },
+    {
+        "time_in_match": "12:05",
+        "home_team_threat": 99.78574123114336,
+        "away_team_threat": 100.74545684611012,
+        "momentum_index": 49.76070665707662
+    },
+    {
+        "time_in_match": "12:10",
+        "home_team_threat": 99.79061294337696,
+        "away_team_threat": 100.72850700897537,
+        "momentum_index": 49.76613350741284
+    },
+    {
+        "time_in_match": "12:14",
+        "home_team_threat": 99.79443043657773,
+        "away_team_threat": 100.71522504877036,
+        "momentum_index": 49.77038646593756
+    },
+    {
+        "time_in_match": "12:19",
+        "home_team_threat": 99.79723184763264,
+        "away_team_threat": 100.6989626076182,
+        "momentum_index": 49.77512521810313
+    },
+    {
+        "time_in_match": "12:24",
+        "home_team_threat": 99.80184229178735,
+        "away_team_threat": 100.68306993398555,
+        "momentum_index": 49.780225945081135
+    },
+    {
+        "time_in_match": "12:29",
+        "home_team_threat": 99.8063479058933,
+        "away_team_threat": 100.66753862027763,
+        "momentum_index": 49.78521124887956
+    },
+    {
+        "time_in_match": "12:34",
+        "home_team_threat": 99.8107510735254,
+        "away_team_threat": 100.6523604500671,
+        "momentum_index": 49.79008372908483
+    },
+    {
+        "time_in_match": "12:39",
+        "home_team_threat": 99.81505412406204,
+        "away_team_threat": 100.58752739374802,
+        "momentum_index": 49.807269631000906
+    },
+    {
+        "time_in_match": "12:43",
+        "home_team_threat": 99.81842601168148,
+        "away_team_threat": 100.57681573913528,
+        "momentum_index": 49.81077651324755
+    },
+    {
+        "time_in_match": "12:48",
+        "home_team_threat": 99.82255455318723,
+        "away_team_threat": 100.36370038190684,
+        "momentum_index": 49.86483941445054
+    },
+    {
+        "time_in_match": "12:53",
+        "home_team_threat": 99.77658922191347,
+        "away_team_threat": 100.35543073857156,
+        "momentum_index": 49.85538508111486
+    },
+    {
+        "time_in_match": "12:58",
+        "home_team_threat": 99.78166902810545,
+        "away_team_threat": 100.34734912638582,
+        "momentum_index": 49.85867114536991
+    },
+    {
+        "time_in_match": "13:03",
+        "home_team_threat": 99.78663333212174,
+        "away_team_threat": 100.33758713453511,
+        "momentum_index": 49.86234704596759
+    },
+    {
+        "time_in_match": "13:08",
+        "home_team_threat": 99.79148476019485,
+        "away_team_threat": 100.32991124158566,
+        "momentum_index": 49.86547503361759
+    },
+    {
+        "time_in_match": "13:12",
+        "home_team_threat": 99.79528635864636,
+        "away_team_threat": 100.32389638115471,
+        "momentum_index": 49.86792619896023
+    },
+    {
+        "time_in_match": "13:17",
+        "home_team_threat": 99.79994103838847,
+        "away_team_threat": 100.31653178193245,
+        "momentum_index": 49.87092748131539
+    },
+    {
+        "time_in_match": "13:22",
+        "home_team_threat": 99.80324712530559,
+        "away_team_threat": 100.30747049995125,
+        "momentum_index": 49.87401390074721
+    },
+    {
+        "time_in_match": "13:27",
+        "home_team_threat": 99.8077207969866,
+        "away_team_threat": 100.30047938446936,
+        "momentum_index": 49.87687696280414
+    },
+    {
+        "time_in_match": "13:32",
+        "home_team_threat": 99.91209274848521,
+        "away_team_threat": 100.09364722958922,
+        "momentum_index": 49.95461268233504
+    },
+    {
+        "time_in_match": "13:37",
+        "home_team_threat": 99.91409154104296,
+        "away_team_threat": 100.09151792418683,
+        "momentum_index": 49.95564464826305
+    },
+    {
+        "time_in_match": "13:41",
+        "home_team_threat": 99.91565780288953,
+        "away_team_threat": 100.08984939195292,
+        "momentum_index": 49.95645330183491
+    },
+    {
+        "time_in_match": "13:46",
+        "home_team_threat": 99.91757553496498,
+        "away_team_threat": 100.08780643994544,
+        "momentum_index": 49.95744341894714
+    },
+    {
+        "time_in_match": "13:51",
+        "home_team_threat": 99.91882828409173,
+        "away_team_threat": 100.08767407504564,
+        "momentum_index": 49.957789924586876
+    },
+    {
+        "time_in_match": "13:56",
+        "home_team_threat": 99.92067392729935,
+        "away_team_threat": 100.08568058434159,
+        "momentum_index": 49.9587496463687
+    },
+    {
+        "time_in_match": "14:01",
+        "home_team_threat": 99.9224776051646,
+        "away_team_threat": 100.08373242066482,
+        "momentum_index": 49.95968754783179
+    },
+    {
+        "time_in_match": "14:06",
+        "home_team_threat": 99.92424027187509,
+        "away_team_threat": 100.08182855339126,
+        "momentum_index": 49.96060412505436
+    },
+    {
+        "time_in_match": "14:10",
+        "home_team_threat": 99.92562150456291,
+        "away_team_threat": 100.08033667537718,
+        "momentum_index": 49.961322359538144
+    },
+    {
+        "time_in_match": "14:15",
+        "home_team_threat": 99.92731268680984,
+        "away_team_threat": 100.07851001891719,
+        "momentum_index": 49.96220176741309
+    },
+    {
+        "time_in_match": "14:20",
+        "home_team_threat": 99.92896541577295,
+        "away_team_threat": 100.0767248960881,
+        "momentum_index": 49.96306118088822
+    },
+    {
+        "time_in_match": "14:25",
+        "home_team_threat": 99.92933780881566,
+        "away_team_threat": 100.06379554979897,
+        "momentum_index": 49.966384410623185
+    },
+    {
+        "time_in_match": "14:30",
+        "home_team_threat": 99.9309444915343,
+        "away_team_threat": 100.06234499745023,
+        "momentum_index": 49.96714877127836
+    },
+    {
+        "time_in_match": "14:35",
+        "home_team_threat": 99.93251464227866,
+        "away_team_threat": 100.06092742705904,
+        "momentum_index": 49.967895751117716
+    },
+    {
+        "time_in_match": "14:39",
+        "home_team_threat": 99.93374501868493,
+        "away_team_threat": 100.05981661322795,
+        "momentum_index": 49.968481086712416
+    },
+    {
+        "time_in_match": "14:44",
+        "home_team_threat": 99.93525149239773,
+        "away_team_threat": 100.05845653201409,
+        "momentum_index": 49.96919777106154
+    },
+    {
+        "time_in_match": "14:49",
+        "home_team_threat": 99.94915128232812,
+        "away_team_threat": 100.1559425629495,
+        "momentum_index": 49.94832933119102
+    },
+    {
+        "time_in_match": "14:54",
+        "home_team_threat": 99.96279296980893,
+        "away_team_threat": 100.15115405942521,
+        "momentum_index": 49.95293654130245
+    },
+    {
+        "time_in_match": "14:59",
+        "home_team_threat": 99.96363896526167,
+        "away_team_threat": 100.14771719154632,
+        "momentum_index": 49.95400605197528
+    },
+    {
+        "time_in_match": "15:04",
+        "home_team_threat": 99.96446572487905,
+        "away_team_threat": 100.14435846950653,
+        "momentum_index": 49.955051271389024
+    },
+    {
+        "time_in_match": "15:08",
+        "home_team_threat": 99.96511357702357,
+        "away_team_threat": 100.14172656147598,
+        "momentum_index": 49.95587032798825
+    },
+    {
+        "time_in_match": "15:13",
+        "home_team_threat": 99.96590680763208,
+        "away_team_threat": 100.13850405148463,
+        "momentum_index": 49.9568732035662
+    },
+    {
+        "time_in_match": "15:18",
+        "home_team_threat": 99.96668200214675,
+        "away_team_threat": 100.16535481336655,
+        "momentum_index": 49.95036456571845
+    },
+    {
+        "time_in_match": "15:23",
+        "home_team_threat": 99.9674395706636,
+        "away_team_threat": 100.20159505561446,
+        "momentum_index": 49.94151056246336
+    },
+    {
+        "time_in_match": "15:28",
+        "home_team_threat": 100.01817991395397,
+        "away_team_threat": 100.19701128476623,
+        "momentum_index": 49.95534020926644
+    },
+    {
+        "time_in_match": "15:32",
+        "home_team_threat": 100.01784846224426,
+        "away_team_threat": 100.19341942358713,
+        "momentum_index": 49.95615357637039
+    },
+    {
+        "time_in_match": "15:37",
+        "home_team_threat": 100.09744263254436,
+        "away_team_threat": 100.18902154630479,
+        "momentum_index": 49.97713801725546
+    },
+    {
+        "time_in_match": "15:42",
+        "home_team_threat": 100.09522702910571,
+        "away_team_threat": 100.1916747176559,
+        "momentum_index": 49.975922617078545
+    },
+    {
+        "time_in_match": "15:47",
+        "home_team_threat": 100.0930618029862,
+        "away_team_threat": 100.18731651065295,
+        "momentum_index": 49.976469310558436
+    },
+    {
+        "time_in_match": "15:52",
+        "home_team_threat": 100.09094580873068,
+        "away_team_threat": 100.18305739845245,
+        "momentum_index": 49.97700360799537
+    },
+    {
+        "time_in_match": "15:57",
+        "home_team_threat": 100.08887792692892,
+        "away_team_threat": 100.17889512788472,
+        "momentum_index": 49.977525789700785
+    },
+    {
+        "time_in_match": "16:01",
+        "home_team_threat": 100.08725752647427,
+        "away_team_threat": 100.17563355601213,
+        "momentum_index": 49.97793499607936
+    },
+    {
+        "time_in_match": "16:06",
+        "home_team_threat": 100.08527350705019,
+        "away_team_threat": 100.17164008518239,
+        "momentum_index": 49.97843605581876
+    },
+    {
+        "time_in_match": "16:11",
+        "home_team_threat": 100.08333459929992,
+        "away_team_threat": 100.16090225263189,
+        "momentum_index": 49.98063173888262
+    },
+    {
+        "time_in_match": "16:16",
+        "home_team_threat": 100.08143977749606,
+        "away_team_threat": 100.0534735281556,
+        "momentum_index": 50.00698684924048
+    },
+    {
+        "time_in_match": "16:21",
+        "home_team_threat": 100.07958803923377,
+        "away_team_threat": 100.05225767294145,
+        "momentum_index": 50.006828090300935
+    },
+    {
+        "time_in_match": "16:26",
+        "home_team_threat": 100.10777840490022,
+        "away_team_threat": 100.00106946325496,
+        "momentum_index": 50.02666272450771
+    },
+    {
+        "time_in_match": "16:30",
+        "home_team_threat": 100.1258134155903,
+        "away_team_threat": 100.00104996506451,
+        "momentum_index": 50.03117109028199
+    },
+    {
+        "time_in_match": "16:35",
+        "home_team_threat": 100.12295273101178,
+        "away_team_threat": 100.00102609146683,
+        "momentum_index": 50.03046277619063
+    },
+    {
+        "time_in_match": "16:40",
+        "home_team_threat": 100.12015709129528,
+        "away_team_threat": 100.00100276069547,
+        "momentum_index": 50.02977054767421
+    },
+    {
+        "time_in_match": "16:45",
+        "home_team_threat": 100.11742501748219,
+        "away_team_threat": 100.00097996040788,
+        "momentum_index": 50.02909403987283
+    },
+    {
+        "time_in_match": "16:50",
+        "home_team_threat": 100.11475506424172,
+        "away_team_threat": 100.0009576785422,
+        "momentum_index": 50.02843289618286
+    },
+    {
+        "time_in_match": "16:55",
+        "home_team_threat": 100.11214581910646,
+        "away_team_threat": 100.00093590331079,
+        "momentum_index": 50.027786768070946
+    },
+    {
+        "time_in_match": "16:59",
+        "home_team_threat": 100.11010120417735,
+        "away_team_threat": 100.00091884015235,
+        "momentum_index": 50.027280447623724
+    },
+    {
+        "time_in_match": "17:04",
+        "home_team_threat": 100.10759777626077,
+        "away_team_threat": 100.06089794800951,
+        "momentum_index": 50.01166512944065
+    },
+    {
+        "time_in_match": "17:09",
+        "home_team_threat": 100.11757883976523,
+        "away_team_threat": 99.87951327992837,
+        "momentum_index": 50.059517255304485
+    },
+    {
+        "time_in_match": "17:14",
+        "home_team_threat": 100.1149053889882,
+        "away_team_threat": 99.88225284868118,
+        "momentum_index": 50.05816396151753
+    },
+    {
+        "time_in_match": "17:19",
+        "home_team_threat": 100.13229272584151,
+        "away_team_threat": 99.88493012644496,
+        "momentum_index": 50.061835324945804
+    },
+    {
+        "time_in_match": "17:24",
+        "home_team_threat": 100.079284717841,
+        "away_team_threat": 100.0075465295621,
+        "momentum_index": 50.0179267640533
+    },
+    {
+        "time_in_match": "17:28",
+        "home_team_threat": 100.07783921840966,
+        "away_team_threat": 100.00553621286626,
+        "momentum_index": 50.01806821915803
+    },
+    {
+        "time_in_match": "17:33",
+        "home_team_threat": 100.07606934791797,
+        "away_team_threat": 100.03541033313637,
+        "momentum_index": 50.010159091034254
+    },
+    {
+        "time_in_match": "17:38",
+        "home_team_threat": 100.07433971988532,
+        "away_team_threat": 100.06274105465889,
+        "momentum_index": 50.00289768022537
+    },
+    {
+        "time_in_match": "17:43",
+        "home_team_threat": 100.07264941929817,
+        "away_team_threat": 100.0913144789105,
+        "momentum_index": 49.995337557458186
+    },
+    {
+        "time_in_match": "17:48",
+        "home_team_threat": 100.07099755194798,
+        "away_team_threat": 100.08923821446453,
+        "momentum_index": 49.995443484954265
+    },
+    {
+        "time_in_match": "17:53",
+        "home_team_threat": 100.06938324395853,
+        "away_team_threat": 100.0872091591151,
+        "momentum_index": 49.99554700773465
+    },
+    {
+        "time_in_match": "17:57",
+        "home_team_threat": 100.06811826575819,
+        "away_team_threat": 100.09810405141809,
+        "momentum_index": 49.99250977879465
+    },
+    {
+        "time_in_match": "18:02",
+        "home_team_threat": 100.0684421558143,
+        "away_team_threat": 100.09400067872794,
+        "momentum_index": 49.993615554808464
+    },
+    {
+        "time_in_match": "18:07",
+        "home_team_threat": 100.06502181573268,
+        "away_team_threat": 100.09497022919207,
+        "momentum_index": 49.9925188812326
+    },
+    {
+        "time_in_match": "18:12",
+        "home_team_threat": 100.06478613811116,
+        "away_team_threat": 100.09281084206475,
+        "momentum_index": 49.99299934042564
+    },
+    {
+        "time_in_match": "18:17",
+        "home_team_threat": 100.05834203436933,
+        "away_team_threat": 100.09007917555287,
+        "momentum_index": 49.99207159841889
+    },
+    {
+        "time_in_match": "18:22",
+        "home_team_threat": 100.05701548141614,
+        "away_team_threat": 100.08678824186826,
+        "momentum_index": 49.99256215783395
+    },
+    {
+        "time_in_match": "18:26",
+        "home_team_threat": 100.05597598921375,
+        "away_team_threat": 100.12520594003654,
+        "momentum_index": 49.982708177123456
+    },
+    {
+        "time_in_match": "18:31",
+        "home_team_threat": 100.05470323425067,
+        "away_team_threat": 100.10048633771413,
+        "momentum_index": 49.988563098573316
+    },
+    {
+        "time_in_match": "18:36",
+        "home_team_threat": 99.85345941857423,
+        "away_team_threat": 100.12323050010448,
+        "momentum_index": 49.93254936821888
+    },
+    {
+        "time_in_match": "18:41",
+        "home_team_threat": 99.85679138742226,
+        "away_team_threat": 100.1185644091555,
+        "momentum_index": 49.93454867958842
+    },
+    {
+        "time_in_match": "18:46",
+        "home_team_threat": 99.86004759557456,
+        "away_team_threat": 100.27586854897842,
+        "momentum_index": 49.896115359648
+    },
+    {
+        "time_in_match": "18:50",
+        "home_team_threat": 99.86259917331267,
+        "away_team_threat": 100.27083898159718,
+        "momentum_index": 49.898008095986306
+    },
+    {
+        "time_in_match": "18:55",
+        "home_team_threat": 99.86572332683906,
+        "away_team_threat": 100.26468077585831,
+        "momentum_index": 49.90032562748074
+    },
+    {
+        "time_in_match": "19:00",
+        "home_team_threat": 99.86877644487393,
+        "away_team_threat": 100.25866259242231,
+        "momentum_index": 49.90259053195706
+    },
+    {
+        "time_in_match": "19:05",
+        "home_team_threat": 99.87176014258793,
+        "away_team_threat": 100.25278124752984,
+        "momentum_index": 49.90480400297354
+    },
+    {
+        "time_in_match": "19:10",
+        "home_team_threat": 99.87467599842677,
+        "away_team_threat": 100.24703362981235,
+        "momentum_index": 49.90696720708681
+    },
+    {
+        "time_in_match": "19:15",
+        "home_team_threat": 99.87752555494613,
+        "away_team_threat": 100.24141669864592,
+        "momentum_index": 49.90908128445965
+    },
+    {
+        "time_in_match": "19:19",
+        "home_team_threat": 99.87975847883745,
+        "away_team_threat": 100.23701524890731,
+        "momentum_index": 49.91073792480886
+    },
+    {
+        "time_in_match": "19:24",
+        "home_team_threat": 99.88249247237601,
+        "away_team_threat": 100.23162611083931,
+        "momentum_index": 49.912766365278195
+    },
+    {
+        "time_in_match": "19:29",
+        "home_team_threat": 99.92516430169212,
+        "away_team_threat": 100.21641745263503,
+        "momentum_index": 49.92723822096589
+    },
+    {
+        "time_in_match": "19:34",
+        "home_team_threat": 99.9250017441435,
+        "away_team_threat": 100.21149665729403,
+        "momentum_index": 49.9284251209952
+    },
+    {
+        "time_in_match": "19:39",
+        "home_team_threat": 99.96727045243797,
+        "away_team_threat": 100.23668774861686,
+        "momentum_index": 49.93271429331374
+    },
+    {
+        "time_in_match": "19:44",
+        "home_team_threat": 99.96801464105674,
+        "away_team_threat": 100.2300633001232,
+        "momentum_index": 49.934552653611526
+    },
+    {
+        "time_in_match": "19:48",
+        "home_team_threat": 99.96859779023636,
+        "away_team_threat": 100.22586884274777,
+        "momentum_index": 49.93574471441734
+    },
+    {
+        "time_in_match": "19:53",
+        "home_team_threat": 99.96931179849041,
+        "away_team_threat": 100.22073314627066,
+        "momentum_index": 49.937204333050225
+    },
+    {
+        "time_in_match": "19:58",
+        "home_team_threat": 99.97000957197021,
+        "away_team_threat": 100.21571422277556,
+        "momentum_index": 49.93863082587816
+    },
+    {
+        "time_in_match": "20:03",
+        "home_team_threat": 99.97069147981419,
+        "away_team_threat": 100.2108094171349,
+        "momentum_index": 49.940024943302745
+    },
+    {
+        "time_in_match": "20:08",
+        "home_team_threat": 100.0513578827675,
+        "away_team_threat": 100.20601613459203,
+        "momentum_index": 49.96138512936579
+    },
+    {
+        "time_in_match": "20:13",
+        "home_team_threat": 100.0801901320747,
+        "away_team_threat": 100.20133183938874,
+        "momentum_index": 49.969757143314666
+    },
+    {
+        "time_in_match": "20:17",
+        "home_team_threat": 100.0787281253542,
+        "away_team_threat": 100.19766120692289,
+        "momentum_index": 49.970307762696045
+    },
+    {
+        "time_in_match": "20:22",
+        "home_team_threat": 100.07693804332645,
+        "away_team_threat": 100.19316688202305,
+        "momentum_index": 49.97098197987665
+    },
+    {
+        "time_in_match": "20:27",
+        "home_team_threat": 100.07518866331786,
+        "away_team_threat": 100.18691061145539,
+        "momentum_index": 49.97210606786254
+    },
+    {
+        "time_in_match": "20:32",
+        "home_team_threat": 100.0734790598656,
+        "away_team_threat": 100.18266072839451,
+        "momentum_index": 49.9727394953672
+    },
+    {
+        "time_in_match": "20:37",
+        "home_team_threat": 100.14559454370554,
+        "away_team_threat": 100.17229369227456,
+        "momentum_index": 49.99333580520339
+    },
+    {
+        "time_in_match": "20:42",
+        "home_team_threat": 100.14166270692105,
+        "away_team_threat": 100.16837616165071,
+        "momentum_index": 49.99333197305523
+    },
+    {
+        "time_in_match": "20:46",
+        "home_team_threat": 100.13907994736944,
+        "away_team_threat": 100.16343363874836,
+        "momentum_index": 49.993920772399974
+    },
+    {
+        "time_in_match": "20:51",
+        "home_team_threat": 100.13591761480934,
+        "away_team_threat": 100.15971756373531,
+        "momentum_index": 49.994058794914636
+    },
+    {
+        "time_in_match": "20:56",
+        "home_team_threat": 100.1328271858371,
+        "away_team_threat": 100.1560859830382,
+        "momentum_index": 49.99419368829929
+    },
+    {
+        "time_in_match": "21:01",
+        "home_team_threat": 100.12980702554378,
+        "away_team_threat": 100.1525369754661,
+        "momentum_index": 49.99432552329171
+    },
+    {
+        "time_in_match": "21:06",
+        "home_team_threat": 100.12685553619416,
+        "away_team_threat": 100.14906866351127,
+        "momentum_index": 49.994454369039644
+    },
+    {
+        "time_in_match": "21:11",
+        "home_team_threat": 100.12397115638147,
+        "away_team_threat": 100.14567921235577,
+        "momentum_index": 49.994580293136195
+    },
+    {
+        "time_in_match": "21:15",
+        "home_team_threat": 100.12046245799876,
+        "away_team_threat": 100.14614444191577,
+        "momentum_index": 49.993588051369485
+    },
+    {
+        "time_in_match": "21:20",
+        "home_team_threat": 100.11772344090532,
+        "away_team_threat": 100.14282148029625,
+        "momentum_index": 49.99373365347607
+    },
+    {
+        "time_in_match": "21:25",
+        "home_team_threat": 100.12747427194559,
+        "away_team_threat": 100.12838926185113,
+        "momentum_index": 49.9997715447904
+    },
+    {
+        "time_in_match": "21:30",
+        "home_team_threat": 100.12333306664995,
+        "away_team_threat": 100.12547000892647,
+        "momentum_index": 49.999466428202396
+    },
+    {
+        "time_in_match": "21:35",
+        "home_team_threat": 100.12052877904571,
+        "away_team_threat": 100.12261713256254,
+        "momentum_index": 49.99947854556836
+    },
+    {
+        "time_in_match": "21:40",
+        "home_team_threat": 100.11778825397636,
+        "away_team_threat": 100.11982912352124,
+        "momentum_index": 49.99949038807702
+    },
+    {
+        "time_in_match": "21:44",
+        "home_team_threat": 100.1156407675656,
+        "away_team_threat": 100.11764442848,
+        "momentum_index": 49.999499668371215
+    },
+    {
+        "time_in_match": "21:49",
+        "home_team_threat": 100.13301138373659,
+        "away_team_threat": 100.07496948637844,
+        "momentum_index": 50.01449540050948
+    },
+    {
+        "time_in_match": "21:54",
+        "home_team_threat": 100.1299870352405,
+        "away_team_threat": 100.07326486646541,
+        "momentum_index": 50.01416614571349
+    },
+    {
+        "time_in_match": "21:59",
+        "home_team_threat": 100.12578869594867,
+        "away_team_threat": 100.07159900537533,
+        "momentum_index": 50.013534065353085
+    },
+    {
+        "time_in_match": "22:04",
+        "home_team_threat": 100.1229285734334,
+        "away_team_threat": 100.06997102182878,
+        "momentum_index": 50.01322663084247
+    },
+    {
+        "time_in_match": "22:08",
+        "home_team_threat": 100.12380858703398,
+        "away_team_threat": 100.06869532740714,
+        "momentum_index": 50.013765065761504
+    },
+    {
+        "time_in_match": "22:13",
+        "home_team_threat": 100.12099348727729,
+        "away_team_threat": 100.06713336628553,
+        "momentum_index": 50.01345237648164
+    },
+    {
+        "time_in_match": "22:18",
+        "home_team_threat": 100.118242395897,
+        "away_team_threat": 100.06560692028026,
+        "momentum_index": 50.01314678376816
+    },
+    {
+        "time_in_match": "22:23",
+        "home_team_threat": 100.02555385750159,
+        "away_team_threat": 100.0641151818658,
+        "momentum_index": 49.990363989168124
+    },
+    {
+        "time_in_match": "22:28",
+        "home_team_threat": 100.02497282625201,
+        "away_team_threat": 100.07265736187777,
+        "momentum_index": 49.98808468256698
+    },
+    {
+        "time_in_match": "22:33",
+        "home_team_threat": 100.02440500620989,
+        "away_team_threat": 100.07100531393309,
+        "momentum_index": 49.98835547810701
+    },
+    {
+        "time_in_match": "22:37",
+        "home_team_threat": 100.1039600601527,
+        "away_team_threat": 100.06971076255282,
+        "momentum_index": 50.00855489572108
+    },
+    {
+        "time_in_match": "22:42",
+        "home_team_threat": 100.10159626659801,
+        "away_team_threat": 99.90124693000664,
+        "momentum_index": 50.05008662211728
+    },
+    {
+        "time_in_match": "22:47",
+        "home_team_threat": 100.11928621983769,
+        "away_team_threat": 99.86349232953809,
+        "momentum_index": 50.063953979476395
+    },
+    {
+        "time_in_match": "22:52",
+        "home_team_threat": 100.11657394747846,
+        "away_team_threat": 99.87902374459844,
+        "momentum_index": 50.05938885796021
+    },
+    {
+        "time_in_match": "22:57",
+        "home_team_threat": 100.11703023787813,
+        "away_team_threat": 99.88177444416867,
+        "momentum_index": 50.0588142999363
+    },
+    {
+        "time_in_match": "23:02",
+        "home_team_threat": 100.11436926094532,
+        "away_team_threat": 99.88446259966281,
+        "momentum_index": 50.05747700102637
+    },
+    {
+        "time_in_match": "23:06",
+        "home_team_threat": 100.11228410877267,
+        "away_team_threat": 99.80656904906485,
+        "momentum_index": 50.0764597872784
+    },
+    {
+        "time_in_match": "23:11",
+        "home_team_threat": 100.1097310470275,
+        "away_team_threat": 99.81096718845049,
+        "momentum_index": 50.07472059201822
+    },
+    {
+        "time_in_match": "23:16",
+        "home_team_threat": 100.10723603556512,
+        "away_team_threat": 99.81526532507053,
+        "momentum_index": 50.073020972753824
+    },
+    {
+        "time_in_match": "23:21",
+        "home_team_threat": 100.10479775446639,
+        "away_team_threat": 99.81946573273935,
+        "momentum_index": 50.07136002823022
+    },
+    {
+        "time_in_match": "23:26",
+        "home_team_threat": 100.10241491382367,
+        "away_team_threat": 99.8235706335707,
+        "momentum_index": 50.0697368777474
+    },
+    {
+        "time_in_match": "23:31",
+        "home_team_threat": 100.10008625305875,
+        "away_team_threat": 99.82758219915272,
+        "momentum_index": 50.06815066069036
+    },
+    {
+        "time_in_match": "23:35",
+        "home_team_threat": 100.09201907106791,
+        "away_team_threat": 99.84321054618971,
+        "momentum_index": 50.06222228202466
+    },
+    {
+        "time_in_match": "23:40",
+        "home_team_threat": 100.0899267859463,
+        "away_team_threat": 99.84677554893987,
+        "momentum_index": 50.0608070539743
+    },
+    {
+        "time_in_match": "23:45",
+        "home_team_threat": 100.08788207419165,
+        "away_team_threat": 99.85025949238224,
+        "momentum_index": 50.059424024837774
+    },
+    {
+        "time_in_match": "23:50",
+        "home_team_threat": 100.08588385410367,
+        "away_team_threat": 99.853664219604,
+        "momentum_index": 50.05807246158576
+    },
+    {
+        "time_in_match": "23:55",
+        "home_team_threat": 100.08393106857737,
+        "away_team_threat": 99.85699153178527,
+        "momentum_index": 50.056751647896945
+    },
+    {
+        "time_in_match": "23:60",
+        "home_team_threat": 100.08202268454367,
+        "away_team_threat": 99.86024318915192,
+        "momentum_index": 50.055460883776284
+    },
+    {
+        "time_in_match": "24:04",
+        "home_team_threat": 100.08052726717827,
+        "away_team_threat": 99.8627912008761,
+        "momentum_index": 50.054449447966164
+    },
+    {
+        "time_in_match": "24:09",
+        "home_team_threat": 100.07869627713414,
+        "away_team_threat": 99.86591098817264,
+        "momentum_index": 50.05321105977095
+    },
+    {
+        "time_in_match": "24:14",
+        "home_team_threat": 100.07690691925582,
+        "away_team_threat": 99.8689598392549,
+        "momentum_index": 50.0520008448717
+    },
+    {
+        "time_in_match": "24:19",
+        "home_team_threat": 100.07515824693131,
+        "away_team_threat": 99.87193936703618,
+        "momentum_index": 50.0508181619839
+    },
+    {
+        "time_in_match": "24:24",
+        "home_team_threat": 100.07344933507211,
+        "away_team_threat": 99.8748511477562,
+        "momentum_index": 50.049662384435464
+    },
+    {
+        "time_in_match": "24:29",
+        "home_team_threat": 100.0717792796241,
+        "away_team_threat": 99.87769672181483,
+        "momentum_index": 50.04853289983312
+    },
+    {
+        "time_in_match": "24:33",
+        "home_team_threat": 100.07047061749212,
+        "away_team_threat": 99.87992652503401,
+        "momentum_index": 50.04764784045972
+    },
+    {
+        "time_in_match": "24:38",
+        "home_team_threat": 100.0688682906834,
+        "away_team_threat": 99.88265669761947,
+        "momentum_index": 50.04656418426286
+    },
+    {
+        "time_in_match": "24:43",
+        "home_team_threat": 100.06730239680647,
+        "away_team_threat": 99.88532479286143,
+        "momentum_index": 50.04550517952745
+    },
+    {
+        "time_in_match": "24:48",
+        "home_team_threat": 100.06577210746697,
+        "away_team_threat": 99.88793222224456,
+        "momentum_index": 50.044470265209284
+    },
+    {
+        "time_in_match": "24:53",
+        "home_team_threat": 100.06427661310617,
+        "away_team_threat": 99.88364520183126,
+        "momentum_index": 50.04516961457646
+    },
+    {
+        "time_in_match": "24:58",
+        "home_team_threat": 100.21219374408831,
+        "away_team_threat": 99.88629082094266,
+        "momentum_index": 50.08143563002341
+    },
+    {
+        "time_in_match": "25:02",
+        "home_team_threat": 100.20832508005346,
+        "away_team_threat": 99.90836393866508,
+        "momentum_index": 50.07494655814546
+    },
+    {
+        "time_in_match": "25:07",
+        "home_team_threat": 100.20358828516532,
+        "away_team_threat": 99.7104475150966,
+        "momentum_index": 50.12333820586801
+    },
+    {
+        "time_in_match": "25:12",
+        "home_team_threat": 100.21895919322778,
+        "away_team_threat": 99.71703121942062,
+        "momentum_index": 50.12552216656222
+    },
+    {
+        "time_in_match": "25:17",
+        "home_team_threat": 100.1939806050188,
+        "away_team_threat": 99.69346522666065,
+        "momentum_index": 50.12519930310672
+    },
+    {
+        "time_in_match": "25:22",
+        "home_team_threat": 100.18956996786451,
+        "away_team_threat": 99.6985709305903,
+        "momentum_index": 50.12281845112653
+    },
+    {
+        "time_in_match": "25:26",
+        "home_team_threat": 100.18611377494088,
+        "away_team_threat": 99.70156953744035,
+        "momentum_index": 50.1212041256047
+    },
+    {
+        "time_in_match": "25:31",
+        "home_team_threat": 100.17876079291459,
+        "away_team_threat": 99.70835510492533,
+        "momentum_index": 50.11766783613749
+    },
+    {
+        "time_in_match": "25:36",
+        "home_team_threat": 100.17469621648497,
+        "away_team_threat": 99.71498638545954,
+        "momentum_index": 50.11499088523266
+    },
+    {
+        "time_in_match": "25:41",
+        "home_team_threat": 100.16575303055261,
+        "away_team_threat": 99.72146688714498,
+        "momentum_index": 50.11113420447554
+    },
+    {
+        "time_in_match": "25:46",
+        "home_team_threat": 100.16198421833082,
+        "away_team_threat": 99.7265572813494,
+        "momentum_index": 50.10891743311412
+    },
+    {
+        "time_in_match": "25:51",
+        "home_team_threat": 100.15830109953804,
+        "away_team_threat": 99.73277468960181,
+        "momentum_index": 50.106439571715825
+    },
+    {
+        "time_in_match": "25:55",
+        "home_team_threat": 100.15541499291372,
+        "away_team_threat": 99.73764667558785,
+        "momentum_index": 50.104497953515434
+    },
+    {
+        "time_in_match": "26:00",
+        "home_team_threat": 100.15188124199045,
+        "away_team_threat": 99.78361193855883,
+        "momentum_index": 50.092097030290425
+    },
+    {
+        "time_in_match": "26:05",
+        "home_team_threat": 100.10842783978616,
+        "away_team_threat": 99.80853206561707,
+        "momentum_index": 50.07500508568933
+    },
+    {
+        "time_in_match": "26:10",
+        "home_team_threat": 100.1059624600196,
+        "away_team_threat": 99.81288557088199,
+        "momentum_index": 50.07329896406073
+    },
+    {
+        "time_in_match": "26:15",
+        "home_team_threat": 100.10355313686549,
+        "away_team_threat": 99.81714008825037,
+        "momentum_index": 50.07163166653604
+    },
+    {
+        "time_in_match": "26:20",
+        "home_team_threat": 100.1011985957357,
+        "away_team_threat": 99.82129786846096,
+        "momentum_index": 50.070002308950976
+    },
+    {
+        "time_in_match": "26:24",
+        "home_team_threat": 100.09935356788446,
+        "away_team_threat": 99.82455592167173,
+        "momentum_index": 50.06872555836727
+    },
+    {
+        "time_in_match": "26:29",
+        "home_team_threat": 100.09522178429334,
+        "away_team_threat": 99.83166630129816,
+        "momentum_index": 50.06591296586439
+    },
+    {
+        "time_in_match": "26:34",
+        "home_team_threat": 100.09181392045906,
+        "away_team_threat": 99.83549379150391,
+        "momentum_index": 50.064103331327914
+    },
+    {
+        "time_in_match": "26:39",
+        "home_team_threat": 100.08972629995279,
+        "away_team_threat": 99.83923425408896,
+        "momentum_index": 50.062645262889795
+    },
+    {
+        "time_in_match": "26:44",
+        "home_team_threat": 100.08768614675164,
+        "away_team_threat": 99.84288966784533,
+        "momentum_index": 50.06122037059837
+    },
+    {
+        "time_in_match": "26:49",
+        "home_team_threat": 100.085692381567,
+        "away_team_threat": 99.84646196657208,
+        "momentum_index": 50.05982789906279
+    },
+    {
+        "time_in_match": "26:53",
+        "home_team_threat": 100.0841300591901,
+        "away_team_threat": 99.84926123414922,
+        "momentum_index": 50.058736768161026
+    },
+    {
+        "time_in_match": "26:58",
+        "home_team_threat": 100.08221715060415,
+        "away_team_threat": 99.88268865928374,
+        "momentum_index": 50.04989087722975
+    },
+    {
+        "time_in_match": "27:03",
+        "home_team_threat": 100.08034773680815,
+        "away_team_threat": 99.88535602779686,
+        "momentum_index": 50.04875628803849
+    },
+    {
+        "time_in_match": "27:08",
+        "home_team_threat": 100.1285208288387,
+        "away_team_threat": 99.9642344760687,
+        "momentum_index": 50.04105254898401
+    },
+    {
+        "time_in_match": "27:13",
+        "home_team_threat": 100.12559858440748,
+        "away_team_threat": 99.97623250796875,
+        "momentum_index": 50.03732251614673
+    },
+    {
+        "time_in_match": "27:18",
+        "home_team_threat": 100.1227427845565,
+        "away_team_threat": 99.97677292170451,
+        "momentum_index": 50.03647431687598
+    },
+    {
+        "time_in_match": "27:22",
+        "home_team_threat": 100.11925648154609,
+        "away_team_threat": 99.97719639207034,
+        "momentum_index": 50.035497902995175
+    },
+    {
+        "time_in_match": "27:27",
+        "home_team_threat": 100.11966610241033,
+        "away_team_threat": 99.97022396855908,
+        "momentum_index": 50.037343749301435
+    },
+    {
+        "time_in_match": "27:32",
+        "home_team_threat": 100.066945192465,
+        "away_team_threat": 99.97090100155717,
+        "momentum_index": 50.02400650495274
+    },
+    {
+        "time_in_match": "27:37",
+        "home_team_threat": 100.065423025065,
+        "away_team_threat": 99.98969850505318,
+        "momentum_index": 50.0189259138763
+    },
+    {
+        "time_in_match": "27:42",
+        "home_team_threat": 100.063935467971,
+        "away_team_threat": 100.09806860000847,
+        "momentum_index": 49.991473623529004
+    },
+    {
+        "time_in_match": "27:47",
+        "home_team_threat": 100.12248173423053,
+        "away_team_threat": 100.09397462817127,
+        "momentum_index": 50.007119071673024
+    },
+    {
+        "time_in_match": "27:51",
+        "home_team_threat": 100.15024867744476,
+        "away_team_threat": 100.09226130591594,
+        "momentum_index": 50.014479286025136
+    },
+    {
+        "time_in_match": "27:56",
+        "home_team_threat": 99.96683239570332,
+        "away_team_threat": 100.12016351297552,
+        "momentum_index": 49.96168388740712
+    },
+    {
+        "time_in_match": "28:01",
+        "home_team_threat": 99.96758654464423,
+        "away_team_threat": 100.26743129314941,
+        "momentum_index": 49.92512679556678
+    },
+    {
+        "time_in_match": "28:06",
+        "home_team_threat": 99.96832354611132,
+        "away_team_threat": 100.4413505697819,
+        "momentum_index": 49.88198498257199
+    },
+    {
+        "time_in_match": "28:11",
+        "home_team_threat": 99.96904378999562,
+        "away_team_threat": 100.70131535403979,
+        "momentum_index": 49.817543665350556
+    },
+    {
+        "time_in_match": "28:16",
+        "home_team_threat": 99.96974765732294,
+        "away_team_threat": 100.68536918479728,
+        "momentum_index": 49.821678724485906
+    },
+    {
+        "time_in_match": "28:20",
+        "home_team_threat": 99.97029921057717,
+        "away_team_threat": 100.67287370276887,
+        "momentum_index": 49.824919412410026
+    },
+    {
+        "time_in_match": "28:25",
+        "home_team_threat": 99.97097453275859,
+        "away_team_threat": 100.65757422603365,
+        "momentum_index": 49.82888783836528
+    },
+    {
+        "time_in_match": "28:30",
+        "home_team_threat": 99.97163449979101,
+        "away_team_threat": 100.64013710746127,
+        "momentum_index": 49.83338400276455
+    },
+    {
+        "time_in_match": "28:35",
+        "home_team_threat": 99.9722794608123,
+        "away_team_threat": 100.62682473656187,
+        "momentum_index": 49.836852393142905
+    },
+    {
+        "time_in_match": "28:40",
+        "home_team_threat": 99.98533732671002,
+        "away_team_threat": 100.61070816348973,
+        "momentum_index": 49.84412184316708
+    },
+    {
+        "time_in_match": "28:44",
+        "home_team_threat": 99.98560465295503,
+        "away_team_threat": 100.59957388279732,
+        "momentum_index": 49.84695548436724
+    },
+    {
+        "time_in_match": "28:49",
+        "home_team_threat": 99.98593196739203,
+        "away_team_threat": 100.57595316735268,
+        "momentum_index": 49.85290794420778
+    },
+    {
+        "time_in_match": "28:54",
+        "home_team_threat": 99.89625183951175,
+        "away_team_threat": 100.5628574228642,
+        "momentum_index": 49.833730283995244
+    },
+    {
+        "time_in_match": "28:59",
+        "home_team_threat": 99.89861081499434,
+        "away_team_threat": 100.57005944307845,
+        "momentum_index": 49.83253028335557
+    },
+    {
+        "time_in_match": "29:04",
+        "home_team_threat": 99.90091615323361,
+        "away_team_threat": 100.55709770724125,
+        "momentum_index": 49.8363294284497
+    },
+    {
+        "time_in_match": "29:09",
+        "home_team_threat": 99.90316907380725,
+        "away_team_threat": 100.544430689083,
+        "momentum_index": 49.84004258069582
+    },
+    {
+        "time_in_match": "29:13",
+        "home_team_threat": 100.05493447138406,
+        "away_team_threat": 100.48450476296601,
+        "momentum_index": 49.89289630677585
+    },
+    {
+        "time_in_match": "29:18",
+        "home_team_threat": 100.05368539794954,
+        "away_team_threat": 100.48348832805615,
+        "momentum_index": 49.89283709296366
+    },
+    {
+        "time_in_match": "29:23",
+        "home_team_threat": 100.0524647253425,
+        "away_team_threat": 100.47249500435156,
+        "momentum_index": 49.895267332412075
+    },
+    {
+        "time_in_match": "29:28",
+        "home_team_threat": 100.05127180779873,
+        "away_team_threat": 100.46175164152308,
+        "momentum_index": 49.8976426003002
+    },
+    {
+        "time_in_match": "29:33",
+        "home_team_threat": 100.04762050029929,
+        "away_team_threat": 100.45125255608126,
+        "momentum_index": 49.89934306122797
+    },
+    {
+        "time_in_match": "29:38",
+        "home_team_threat": 100.126537728401,
+        "away_team_threat": 100.24099219376497,
+        "momentum_index": 49.97143886901026
+    },
+    {
+        "time_in_match": "29:42",
+        "home_team_threat": 100.39235799350018,
+        "away_team_threat": 100.23472575326558,
+        "momentum_index": 50.03928488549272
+    },
+    {
+        "time_in_match": "29:47",
+        "home_team_threat": 100.3834367472563,
+        "away_team_threat": 100.22938867264185,
+        "momentum_index": 50.03839437341357
+    },
+    {
+        "time_in_match": "29:52",
+        "home_team_threat": 100.37471834799364,
+        "away_team_threat": 100.2241729439754,
+        "momentum_index": 50.03752398705911
+    },
+    {
+        "time_in_match": "29:57",
+        "home_team_threat": 100.36619818347569,
+        "away_team_threat": 100.2190758080242,
+        "momentum_index": 50.03667327429473
+    },
+    {
+        "time_in_match": "30:02",
+        "home_team_threat": 100.35787174633668,
+        "away_team_threat": 100.21409456828437,
+        "momentum_index": 50.03584179302176
+    },
+    {
+        "time_in_match": "30:07",
+        "home_team_threat": 100.34973463169729,
+        "away_team_threat": 100.20922658956393,
+        "momentum_index": 50.03502911096014
+    },
+    {
+        "time_in_match": "30:11",
+        "home_team_threat": 100.33836440882678,
+        "away_team_threat": 100.00541202195899,
+        "momentum_index": 50.08309526574758
+    },
+    {
+        "time_in_match": "30:16",
+        "home_team_threat": 100.3287981123614,
+        "away_team_threat": 100.00528896602188,
+        "momentum_index": 50.080742411602905
+    },
+    {
+        "time_in_match": "30:21",
+        "home_team_threat": 100.32132205994628,
+        "away_team_threat": 100.00516870807114,
+        "momentum_index": 50.078909521816875
+    },
+    {
+        "time_in_match": "30:26",
+        "home_team_threat": 100.31401599439423,
+        "away_team_threat": 100.00505118448748,
+        "momentum_index": 50.077118173087044
+    },
+    {
+        "time_in_match": "30:31",
+        "home_team_threat": 100.30687605062626,
+        "away_team_threat": 100.00493633309824,
+        "momentum_index": 50.07536742689683
+    },
+    {
+        "time_in_match": "30:36",
+        "home_team_threat": 100.29989845144554,
+        "away_team_threat": 100.00482409314435,
+        "momentum_index": 50.073656365799245
+    },
+    {
+        "time_in_match": "30:40",
+        "home_team_threat": 100.28943682952837,
+        "away_team_threat": 100.00473614146732,
+        "momentum_index": 50.0710706367135
+    },
+    {
+        "time_in_match": "30:45",
+        "home_team_threat": 100.28285575492036,
+        "away_team_threat": 100.00462845337383,
+        "momentum_index": 50.069456986452835
+    },
+    {
+        "time_in_match": "30:50",
+        "home_team_threat": 100.22642431760303,
+        "away_team_threat": 99.93452321384017,
+        "momentum_index": 50.07291659720911
+    },
+    {
+        "time_in_match": "30:55",
+        "home_team_threat": 100.18127599100741,
+        "away_team_threat": 99.95601199332793,
+        "momentum_index": 50.056277368387526
+    },
+    {
+        "time_in_match": "30:60",
+        "home_team_threat": 100.17715422522035,
+        "away_team_threat": 99.95701217134344,
+        "momentum_index": 50.05499861863684
+    },
+    {
+        "time_in_match": "31:05",
+        "home_team_threat": 100.17312617814976,
+        "away_team_threat": 99.95798960779507,
+        "momentum_index": 50.05374890593844
+    },
+    {
+        "time_in_match": "31:09",
+        "home_team_threat": 100.16996978434673,
+        "away_team_threat": 99.95875553090985,
+        "momentum_index": 50.052769599442605
+    },
+    {
+        "time_in_match": "31:14",
+        "home_team_threat": 100.16610509361706,
+        "away_team_threat": 99.95969332769502,
+        "momentum_index": 50.051570504040534
+    },
+    {
+        "time_in_match": "31:19",
+        "home_team_threat": 100.1623282763556,
+        "away_team_threat": 99.96060980131065,
+        "momentum_index": 50.05039863920213
+    },
+    {
+        "time_in_match": "31:24",
+        "home_team_threat": 100.15863733453793,
+        "away_team_threat": 99.96150543659252,
+        "momentum_index": 50.049253387294165
+    },
+    {
+        "time_in_match": "31:29",
+        "home_team_threat": 100.15503031556972,
+        "away_team_threat": 99.96238070735261,
+        "momentum_index": 50.04813414465846
+    },
+    {
+        "time_in_match": "31:34",
+        "home_team_threat": 100.15150531125377,
+        "away_team_threat": 99.96323607662964,
+        "momentum_index": 50.047040321297274
+    },
+    {
+        "time_in_match": "31:38",
+        "home_team_threat": 100.14874310376626,
+        "away_team_threat": 99.96390634741789,
+        "momentum_index": 50.046183176539635
+    },
+    {
+        "time_in_match": "31:43",
+        "home_team_threat": 100.14536105503076,
+        "away_team_threat": 99.96472702742918,
+        "momentum_index": 50.04513366350805
+    },
+    {
+        "time_in_match": "31:48",
+        "home_team_threat": 100.14205590568325,
+        "away_team_threat": 99.96552904721538,
+        "momentum_index": 50.044107987838
+    },
+    {
+        "time_in_match": "31:53",
+        "home_team_threat": 100.13758315025389,
+        "away_team_threat": 99.96879834500133,
+        "momentum_index": 50.042173768770226
+    },
+    {
+        "time_in_match": "31:58",
+        "home_team_threat": 100.13445485114246,
+        "away_team_threat": 99.96950779313812,
+        "momentum_index": 50.04121534022231
+    },
+    {
+        "time_in_match": "32:02",
+        "home_team_threat": 100.1320035034406,
+        "away_team_threat": 99.97006371953708,
+        "momentum_index": 50.040464295584485
+    },
+    {
+        "time_in_match": "32:07",
+        "home_team_threat": 100.12900207163912,
+        "away_team_threat": 99.97074439619988,
+        "momentum_index": 50.039544696640746
+    },
+    {
+        "time_in_match": "32:12",
+        "home_team_threat": 100.12606888494199,
+        "away_team_threat": 99.97140959596598,
+        "momentum_index": 50.03864598648372
+    },
+    {
+        "time_in_match": "32:17",
+        "home_team_threat": 100.12320239162489,
+        "away_team_threat": 99.97205967074166,
+        "momentum_index": 50.03776769108009
+    },
+    {
+        "time_in_match": "32:22",
+        "home_team_threat": 99.62040107524616,
+        "away_team_threat": 99.97269496443155,
+        "momentum_index": 49.911746975177095
+    },
+    {
+        "time_in_match": "32:27",
+        "home_team_threat": 99.63462461831706,
+        "away_team_threat": 99.97331581312085,
+        "momentum_index": 49.91516089137743
+    },
+    {
+        "time_in_match": "32:31",
+        "home_team_threat": 99.64128605220803,
+        "away_team_threat": 99.97317806922845,
+        "momentum_index": 49.91686674147559
+    },
+    {
+        "time_in_match": "32:36",
+        "home_team_threat": 99.64944231641671,
+        "away_team_threat": 99.97378793331454,
+        "momentum_index": 49.91876055294465
+    },
+    {
+        "time_in_match": "32:41",
+        "home_team_threat": 99.65244209956033,
+        "away_team_threat": 99.97438393060621,
+        "momentum_index": 49.91936408611806
+    },
+    {
+        "time_in_match": "32:46",
+        "home_team_threat": 99.66034470296128,
+        "away_team_threat": 99.98552981063465,
+        "momentum_index": 49.91855952233784
+    },
+    {
+        "time_in_match": "32:51",
+        "home_team_threat": 99.6668248638204,
+        "away_team_threat": 99.98834434073774,
+        "momentum_index": 49.91948130414096
+    },
+    {
+        "time_in_match": "32:56",
+        "home_team_threat": 99.67440043888561,
+        "away_team_threat": 99.98860936147936,
+        "momentum_index": 49.92131518930123
+    },
+    {
+        "time_in_match": "33:00",
+        "home_team_threat": 99.68033668982103,
+        "away_team_threat": 99.98881703279298,
+        "momentum_index": 49.922752128403246
+    },
+    {
+        "time_in_match": "33:05",
+        "home_team_threat": 99.68760503952333,
+        "away_team_threat": 99.98907130569133,
+        "momentum_index": 49.92451139720324
+    },
+    {
+        "time_in_match": "33:10",
+        "home_team_threat": 99.6947081250063,
+        "away_team_threat": 99.99429082493079,
+        "momentum_index": 49.92498768046817
+    },
+    {
+        "time_in_match": "33:15",
+        "home_team_threat": 99.70164970396783,
+        "away_team_threat": 99.99442063739157,
+        "momentum_index": 49.926695870148244
+    },
+    {
+        "time_in_match": "33:20",
+        "home_team_threat": 99.70843344866515,
+        "away_team_threat": 99.99454749823943,
+        "momentum_index": 49.928365102959994
+    },
+    {
+        "time_in_match": "33:25",
+        "home_team_threat": 99.71506294785729,
+        "away_team_threat": 99.99467147458668,
+        "momentum_index": 49.929996269951985
+    },
+    {
+        "time_in_match": "33:29",
+        "home_team_threat": 99.72025784995274,
+        "away_team_threat": 100.02476862294849,
+        "momentum_index": 49.923775130131446
+    },
+    {
+        "time_in_match": "33:34",
+        "home_team_threat": 99.72661849162878,
+        "away_team_threat": 100.05420544598223,
+        "momentum_index": 49.91801341392612
+    },
+    {
+        "time_in_match": "33:39",
+        "home_team_threat": 99.73283450811141,
+        "away_team_threat": 100.1329729487747,
+        "momentum_index": 49.89989822527557
+    },
+    {
+        "time_in_match": "33:44",
+        "home_team_threat": 99.73890918781848,
+        "away_team_threat": 100.2099494741942,
+        "momentum_index": 49.88220980866613
+    },
+    {
+        "time_in_match": "33:49",
+        "home_team_threat": 99.7448457443971,
+        "away_team_threat": 100.2051757446179,
+        "momentum_index": 49.88488873449656
+    },
+    {
+        "time_in_match": "33:54",
+        "home_team_threat": 99.77064731842417,
+        "away_team_threat": 100.20051055779534,
+        "momentum_index": 49.892518690211
+    },
+    {
+        "time_in_match": "33:58",
+        "home_team_threat": 99.79482881997745,
+        "away_team_threat": 100.15685489873299,
+        "momentum_index": 49.909471610335416
+    },
+    {
+        "time_in_match": "34:03",
+        "home_team_threat": 99.79949390301248,
+        "away_team_threat": 100.15328840792782,
+        "momentum_index": 49.91153048714142
+    },
+    {
+        "time_in_match": "34:08",
+        "home_team_threat": 99.80405291364629,
+        "away_team_threat": 100.14980301026519,
+        "momentum_index": 49.91354252834452
+    },
+    {
+        "time_in_match": "34:13",
+        "home_team_threat": 99.80850826370182,
+        "away_team_threat": 100.14639686188853,
+        "momentum_index": 49.91550879985303
+    },
+    {
+        "time_in_match": "34:18",
+        "home_team_threat": 99.81286231016318,
+        "away_team_threat": 100.14306816086577,
+        "momentum_index": 49.91743034329496
+    },
+    {
+        "time_in_match": "34:23",
+        "home_team_threat": 99.81711735642246,
+        "away_team_threat": 100.13981514623656,
+        "momentum_index": 49.91930817657202
+    },
+    {
+        "time_in_match": "34:27",
+        "home_team_threat": 99.62045162769819,
+        "away_team_threat": 100.13726607095593,
+        "momentum_index": 49.87063968060614
+    },
+    {
+        "time_in_match": "34:32",
+        "home_team_threat": 99.62908161497226,
+        "away_team_threat": 100.15414498144013,
+        "momentum_index": 49.86859172929253
+    },
+    {
+        "time_in_match": "34:37",
+        "home_team_threat": 99.63751537777058,
+        "away_team_threat": 100.15064010742341,
+        "momentum_index": 49.87158279518455
+    },
+    {
+        "time_in_match": "34:42",
+        "home_team_threat": 99.64575737775047,
+        "away_team_threat": 100.14721492553645,
+        "momentum_index": 49.87450570908351
+    },
+    {
+        "time_in_match": "34:47",
+        "home_team_threat": 99.65381197512207,
+        "away_team_threat": 100.17386762377826,
+        "momentum_index": 49.869873970988394
+    },
+    {
+        "time_in_match": "34:52",
+        "home_team_threat": 99.66168343095524,
+        "away_team_threat": 100.16991430586128,
+        "momentum_index": 49.872835207078865
+    },
+    {
+        "time_in_match": "34:56",
+        "home_team_threat": 99.6678515352444,
+        "away_team_threat": 100.19681647012203,
+        "momentum_index": 49.86766922334081
+    },
+    {
+        "time_in_match": "35:01",
+        "home_team_threat": 99.66604011520577,
+        "away_team_threat": 100.19234135243896,
+        "momentum_index": 49.86833145716273
+    },
+    {
+        "time_in_match": "35:06",
+        "home_team_threat": 99.67363353350532,
+        "away_team_threat": 100.18672523084797,
+        "momentum_index": 49.87163745214037
+    },
+    {
+        "time_in_match": "35:11",
+        "home_team_threat": 99.6810542963331,
+        "away_team_threat": 100.19490713256977,
+        "momentum_index": 49.87145706953373
+    },
+    {
+        "time_in_match": "35:16",
+        "home_team_threat": 99.68706357247687,
+        "away_team_threat": 100.2204754284803,
+        "momentum_index": 49.866585357743595
+    },
+    {
+        "time_in_match": "35:20",
+        "home_team_threat": 99.69401743910161,
+        "away_team_threat": 100.21832850504626,
+        "momentum_index": 49.86886476083595
+    },
+    {
+        "time_in_match": "35:25",
+        "home_team_threat": 99.70097472254517,
+        "away_team_threat": 100.29336425712,
+        "momentum_index": 49.85189842432614
+    },
+    {
+        "time_in_match": "35:30",
+        "home_team_threat": 99.7077738146435,
+        "away_team_threat": 100.28669388256345,
+        "momentum_index": 49.85526597945788
+    },
+    {
+        "time_in_match": "35:35",
+        "home_team_threat": 99.7144183122749,
+        "away_team_threat": 100.28017517575651,
+        "momentum_index": 49.858556960562176
+    },
+    {
+        "time_in_match": "35:40",
+        "home_team_threat": 99.72091173053362,
+        "away_team_threat": 100.27380468815143,
+        "momentum_index": 49.86177310893045
+    },
+    {
+        "time_in_match": "35:45",
+        "home_team_threat": 99.72725750458929,
+        "away_team_threat": 100.26757904961163,
+        "momentum_index": 49.864916126253114
+    },
+    {
+        "time_in_match": "35:49",
+        "home_team_threat": 99.73223007853254,
+        "away_team_threat": 100.26270061433944,
+        "momentum_index": 49.867379004565485
+    },
+    {
+        "time_in_match": "35:54",
+        "home_team_threat": 99.56831850146686,
+        "away_team_threat": 100.25672745485812,
+        "momentum_index": 49.82774707992768
+    },
+    {
+        "time_in_match": "35:59",
+        "home_team_threat": 99.57813386654455,
+        "away_team_threat": 100.05089011018744,
+        "momentum_index": 49.88159130515561
+    },
+    {
+        "time_in_match": "36:04",
+        "home_team_threat": 99.64772605459947,
+        "away_team_threat": 100.04724748154362,
+        "momentum_index": 49.89996707982441
+    },
+    {
+        "time_in_match": "36:09",
+        "home_team_threat": 99.67822140308692,
+        "away_team_threat": 100.00493043419652,
+        "momentum_index": 49.91819314045688
+    },
+    {
+        "time_in_match": "36:14",
+        "home_team_threat": 99.68553784915565,
+        "away_team_threat": 99.50481832836903,
+        "momentum_index": 50.045363521672094
+    },
+    {
+        "time_in_match": "36:18",
+        "home_team_threat": 99.69127104557248,
+        "away_team_threat": 99.51384635854008,
+        "momentum_index": 50.044533164946884
+    },
+    {
+        "time_in_match": "36:23",
+        "home_team_threat": 99.69829077518345,
+        "away_team_threat": 99.52490028485146,
+        "momentum_index": 50.043516643170264
+    },
+    {
+        "time_in_match": "36:28",
+        "home_team_threat": 99.70515089357845,
+        "away_team_threat": 99.53570287233391,
+        "momentum_index": 50.042523412754406
+    },
+    {
+        "time_in_match": "36:33",
+        "home_team_threat": 99.71185502992014,
+        "away_team_threat": 99.54625983580824,
+        "momentum_index": 50.0415529360557
+    },
+    {
+        "time_in_match": "36:38",
+        "home_team_threat": 99.71840673085299,
+        "away_team_threat": 99.5565767601543,
+        "momentum_index": 50.040604688020466
+    },
+    {
+        "time_in_match": "36:43",
+        "home_team_threat": 99.7248094623796,
+        "away_team_threat": 99.56665910326561,
+        "momentum_index": 50.039678155881994
+    },
+    {
+        "time_in_match": "36:47",
+        "home_team_threat": 99.72982666842485,
+        "away_team_threat": 99.57455966767294,
+        "momentum_index": 50.038952228700595
+    },
+    {
+        "time_in_match": "36:52",
+        "home_team_threat": 99.73596973893557,
+        "away_team_threat": 99.58423312413275,
+        "momentum_index": 50.03806353109801
+    },
+    {
+        "time_in_match": "36:57",
+        "home_team_threat": 99.74197313128089,
+        "away_team_threat": 99.59368663021928,
+        "momentum_index": 50.037195176527625
+    },
+    {
+        "time_in_match": "37:02",
+        "home_team_threat": 99.74784002139528,
+        "away_team_threat": 99.60106105160459,
+        "momentum_index": 50.03681459215492
+    },
+    {
+        "time_in_match": "37:07",
+        "home_team_threat": 99.75357351300056,
+        "away_team_threat": 99.61013193241722,
+        "momentum_index": 50.03597484814571
+    },
+    {
+        "time_in_match": "37:12",
+        "home_team_threat": 99.75606974682535,
+        "away_team_threat": 99.61402553605492,
+        "momentum_index": 50.03562324895539
+    },
+    {
+        "time_in_match": "37:16",
+        "home_team_threat": 99.76051702307055,
+        "away_team_threat": 99.62106252733584,
+        "momentum_index": 50.03497176019198
+    },
+    {
+        "time_in_match": "37:21",
+        "home_team_threat": 99.76596227114449,
+        "away_team_threat": 99.62967862426947,
+        "momentum_index": 50.034174179100155
+    },
+    {
+        "time_in_match": "37:26",
+        "home_team_threat": 99.771283707802,
+        "away_team_threat": 99.63809881255924,
+        "momentum_index": 50.03339484169687
+    },
+    {
+        "time_in_match": "37:31",
+        "home_team_threat": 99.77648414820716,
+        "away_team_threat": 99.64632754668112,
+        "momentum_index": 50.03263332825865
+    },
+    {
+        "time_in_match": "37:36",
+        "home_team_threat": 99.7846732359363,
+        "away_team_threat": 99.65436917982741,
+        "momentum_index": 50.03266763982883
+    },
+    {
+        "time_in_match": "37:41",
+        "home_team_threat": 101.23956923172824,
+        "away_team_threat": 99.66098520924079,
+        "momentum_index": 50.39287697012088
+    },
+    {
+        "time_in_match": "37:45",
+        "home_team_threat": 101.2169697110588,
+        "away_team_threat": 99.66029936582922,
+        "momentum_index": 50.387468017756085
+    },
+    {
+        "time_in_match": "37:50",
+        "home_team_threat": 101.1855533820479,
+        "away_team_threat": 99.6680233145109,
+        "momentum_index": 50.37777023752722
+    },
+    {
+        "time_in_match": "37:55",
+        "home_team_threat": 101.15673270733271,
+        "away_team_threat": 99.67557163978417,
+        "momentum_index": 50.368755682100954
+    },
+    {
+        "time_in_match": "37:60",
+        "home_team_threat": 101.1416162913491,
+        "away_team_threat": 99.68108419943573,
+        "momentum_index": 50.36363720046191
+    },
+    {
+        "time_in_match": "38:05",
+        "home_team_threat": 101.11565877239987,
+        "away_team_threat": 99.6790148753599,
+        "momentum_index": 50.357739543320804
+    },
+    {
+        "time_in_match": "38:10",
+        "home_team_threat": 101.09029146295893,
+        "away_team_threat": 99.67512846712057,
+        "momentum_index": 50.352441918616066
+    },
+    {
+        "time_in_match": "38:14",
+        "home_team_threat": 101.0704135377716,
+        "away_team_threat": 99.66419687276243,
+        "momentum_index": 50.350267615069775
+    },
+    {
+        "time_in_match": "38:19",
+        "home_team_threat": 101.04607499258717,
+        "away_team_threat": 99.67183220181697,
+        "momentum_index": 50.342331885076696
+    },
+    {
+        "time_in_match": "38:24",
+        "home_team_threat": 101.02228984546888,
+        "away_team_threat": 99.67929392245324,
+        "momentum_index": 50.334575317693705
+    },
+    {
+        "time_in_match": "38:29",
+        "home_team_threat": 100.99904551351914,
+        "away_team_threat": 99.68658598209545,
+        "momentum_index": 50.32699389628509
+    },
+    {
+        "time_in_match": "38:34",
+        "home_team_threat": 100.97632969994423,
+        "away_team_threat": 99.69371223841327,
+        "momentum_index": 50.31958369299713
+    },
+    {
+        "time_in_match": "38:38",
+        "home_team_threat": 100.9585294975277,
+        "away_team_threat": 99.69929640138021,
+        "momentum_index": 50.313776223405796
+    },
+    {
+        "time_in_match": "38:43",
+        "home_team_threat": 100.93673491752389,
+        "away_team_threat": 99.70613365433324,
+        "momentum_index": 50.306664590660475
+    },
+    {
+        "time_in_match": "38:48",
+        "home_team_threat": 100.91543589213651,
+        "away_team_threat": 99.71281544513633,
+        "momentum_index": 50.29971363429233
+    },
+    {
+        "time_in_match": "38:53",
+        "home_team_threat": 100.89462115368457,
+        "away_team_threat": 99.7193453086126,
+        "momentum_index": 50.292919746764696
+    },
+    {
+        "time_in_match": "38:58",
+        "home_team_threat": 100.87987209704558,
+        "away_team_threat": 99.72572669921215,
+        "momentum_index": 50.287665300659334
+    },
+    {
+        "time_in_match": "39:03",
+        "home_team_threat": 100.85986599096155,
+        "away_team_threat": 99.73072023587055,
+        "momentum_index": 50.28145532059369
+    },
+    {
+        "time_in_match": "39:07",
+        "home_team_threat": 100.94418912617799,
+        "away_team_threat": 99.81562967815059,
+        "momentum_index": 50.281072042889065
+    },
+    {
+        "time_in_match": "39:12",
+        "home_team_threat": 100.92272061060041,
+        "away_team_threat": 99.81982180133534,
+        "momentum_index": 50.27470480248324
+    },
+    {
+        "time_in_match": "39:17",
+        "home_team_threat": 100.89241955847803,
+        "away_team_threat": 99.82702549847329,
+        "momentum_index": 50.26539383359256
+    },
+    {
+        "time_in_match": "39:22",
+        "home_team_threat": 100.9021281542861,
+        "away_team_threat": 99.86033713052412,
+        "momentum_index": 50.25945861500656
+    },
+    {
+        "time_in_match": "39:27",
+        "home_team_threat": 100.88161600073944,
+        "away_team_threat": 99.86351271728506,
+        "momentum_index": 50.25358106818235
+    },
+    {
+        "time_in_match": "39:32",
+        "home_team_threat": 100.86157024261688,
+        "away_team_threat": 99.86661609909056,
+        "momentum_index": 50.247836181270664
+    },
+    {
+        "time_in_match": "39:36",
+        "home_team_threat": 100.84586230633725,
+        "away_team_threat": 99.8690479214918,
+        "momentum_index": 50.243333787145325
+    },
+    {
+        "time_in_match": "39:41",
+        "home_team_threat": 100.82163555114361,
+        "away_team_threat": 99.88451031469606,
+        "momentum_index": 50.23345703550951
+    },
+    {
+        "time_in_match": "39:46",
+        "home_team_threat": 100.78617638038803,
+        "away_team_threat": 99.88713626328966,
+        "momentum_index": 50.22400589925346
+    },
+    {
+        "time_in_match": "39:51",
+        "home_team_threat": 100.76830068218187,
+        "away_team_threat": 99.88970250433451,
+        "momentum_index": 50.21892926369617
+    },
+    {
+        "time_in_match": "39:56",
+        "home_team_threat": 100.75083143295377,
+        "away_team_threat": 99.972210395432,
+        "momentum_index": 50.193954074835986
+    },
+    {
+        "time_in_match": "40:01",
+        "home_team_threat": 100.73375939106343,
+        "away_team_threat": 99.97284226201678,
+        "momentum_index": 50.189559566745565
+    },
+    {
+        "time_in_match": "40:05",
+        "home_team_threat": 100.72038167072297,
+        "away_team_threat": 99.97333739520111,
+        "momentum_index": 50.18611550949347
+    },
+    {
+        "time_in_match": "40:10",
+        "home_team_threat": 100.70400198079548,
+        "away_team_threat": 99.97394363661036,
+        "momentum_index": 50.181898001282356
+    },
+    {
+        "time_in_match": "40:15",
+        "home_team_threat": 100.68799472433348,
+        "away_team_threat": 99.98696366328392,
+        "momentum_index": 50.17466829610486
+    },
+    {
+        "time_in_match": "40:20",
+        "home_team_threat": 100.67235143312504,
+        "away_team_threat": 99.98726007720151,
+        "momentum_index": 50.17070982814303
+    },
+    {
+        "time_in_match": "40:25",
+        "home_team_threat": 100.65706383150435,
+        "away_team_threat": 99.9875497514029,
+        "momentum_index": 50.16684078085773
+    },
+    {
+        "time_in_match": "40:30",
+        "home_team_threat": 100.44212383197348,
+        "away_team_threat": 99.9878328391324,
+        "momentum_index": 50.113329115164795
+    },
+    {
+        "time_in_match": "40:34",
+        "home_team_threat": 100.45406313925588,
+        "away_team_threat": 99.95805466781003,
+        "momentum_index": 50.1237471258907
+    },
+    {
+        "time_in_match": "40:39",
+        "home_team_threat": 100.3937388712591,
+        "away_team_threat": 99.95900840048134,
+        "momentum_index": 50.10849126770099
+    },
+    {
+        "time_in_match": "40:44",
+        "home_team_threat": 100.33478622728478,
+        "away_team_threat": 99.97994044764053,
+        "momentum_index": 50.088572064953595
+    },
+    {
+        "time_in_match": "40:49",
+        "home_team_threat": 100.32717402000938,
+        "away_team_threat": 99.98039655203782,
+        "momentum_index": 50.08656124852925
+    },
+    {
+        "time_in_match": "40:54",
+        "home_team_threat": 100.32284178784252,
+        "away_team_threat": 101.63519193514483,
+        "momentum_index": 49.67509335402266
+    },
+    {
+        "time_in_match": "40:59",
+        "home_team_threat": 100.31798668139041,
+        "away_team_threat": 101.59676897501686,
+        "momentum_index": 49.683336096594516
+    },
+    {
+        "time_in_match": "41:03",
+        "home_team_threat": 100.3121892266015,
+        "away_team_threat": 101.56765707668029,
+        "momentum_index": 49.68905567517802
+    },
+    {
+        "time_in_match": "41:08",
+        "home_team_threat": 100.30509081899585,
+        "away_team_threat": 101.53201244846132,
+        "momentum_index": 49.69606142537637
+    },
+    {
+        "time_in_match": "41:13",
+        "home_team_threat": 100.29815381154829,
+        "away_team_threat": 101.4971782905549,
+        "momentum_index": 49.70291074959059
+    },
+    {
+        "time_in_match": "41:18",
+        "home_team_threat": 100.29137453442017,
+        "away_team_threat": 101.46313617487911,
+        "momentum_index": 49.70960707734875
+    },
+    {
+        "time_in_match": "41:23",
+        "home_team_threat": 100.28474940121573,
+        "away_team_threat": 101.42986809236092,
+        "momentum_index": 49.71615376580687
+    },
+    {
+        "time_in_match": "41:28",
+        "home_team_threat": 100.27827490708503,
+        "away_team_threat": 101.39735644340878,
+        "momentum_index": 49.72255410114996
+    },
+    {
+        "time_in_match": "41:32",
+        "home_team_threat": 100.27320146757597,
+        "away_team_threat": 101.37188018519176,
+        "momentum_index": 49.72757115903583
+    },
+    {
+        "time_in_match": "41:37",
+        "home_team_threat": 100.2669895447738,
+        "away_team_threat": 101.34068703721985,
+        "momentum_index": 49.733716118689216
+    },
+    {
+        "time_in_match": "41:42",
+        "home_team_threat": 100.26091886566714,
+        "away_team_threat": 101.3102031439561,
+        "momentum_index": 49.73972356064008
+    },
+    {
+        "time_in_match": "41:47",
+        "home_team_threat": 100.25498621872516,
+        "away_team_threat": 101.28041237871008,
+        "momentum_index": 49.745596513783376
+    },
+    {
+        "time_in_match": "41:52",
+        "home_team_threat": 100.24918846543932,
+        "away_team_threat": 101.25129898147225,
+        "momentum_index": 49.751337942471
+    },
+    {
+        "time_in_match": "41:56",
+        "home_team_threat": 100.24464532276433,
+        "away_team_threat": 101.22848560689698,
+        "momentum_index": 49.755838339436906
+    },
+    {
+        "time_in_match": "42:01",
+        "home_team_threat": 100.2390826957682,
+        "away_team_threat": 101.20055289547585,
+        "momentum_index": 49.761350293132324
+    },
+    {
+        "time_in_match": "42:06",
+        "home_team_threat": 100.23364654909365,
+        "away_team_threat": 101.17325530453395,
+        "momentum_index": 49.76673868998711
+    },
+    {
+        "time_in_match": "42:11",
+        "home_team_threat": 100.22833400689228,
+        "away_team_threat": 101.14657839300902,
+        "momentum_index": 49.77200626056804
+    },
+    {
+        "time_in_match": "42:16",
+        "home_team_threat": 100.2231422587055,
+        "away_team_threat": 101.1205080481928,
+        "momentum_index": 49.77715567684417
+    },
+    {
+        "time_in_match": "42:21",
+        "home_team_threat": 100.21806855797729,
+        "away_team_threat": 101.09503047826479,
+        "momentum_index": 49.78218955336592
+    },
+    {
+        "time_in_match": "42:25",
+        "home_team_threat": 100.19530495626948,
+        "away_team_threat": 101.09506615251857,
+        "momentum_index": 49.776501679813876
+    },
+    {
+        "time_in_match": "42:30",
+        "home_team_threat": 100.1508642066571,
+        "away_team_threat": 101.09016706810637,
+        "momentum_index": 49.76662242896012
+    },
+    {
+        "time_in_match": "42:35",
+        "home_team_threat": 100.06743392931021,
+        "away_team_threat": 101.06537937670544,
+        "momentum_index": 49.75191878664848
+    },
+    {
+        "time_in_match": "42:40",
+        "home_team_threat": 100.06590064924829,
+        "away_team_threat": 101.04115529583997,
+        "momentum_index": 49.75752848600748
+    },
+    {
+        "time_in_match": "42:45",
+        "home_team_threat": 100.06440223216667,
+        "away_team_threat": 101.01748201040627,
+        "momentum_index": 49.76301202322884
+    },
+    {
+        "time_in_match": "42:50",
+        "home_team_threat": 100.06293788536775,
+        "away_team_threat": 100.99434699668429,
+        "momentum_index": 49.768372205000446
+    },
+    {
+        "time_in_match": "42:54",
+        "home_team_threat": 100.06179041735642,
+        "away_team_threat": 100.976218307355,
+        "momentum_index": 49.77257338157116
+    },
+    {
+        "time_in_match": "42:59",
+        "home_team_threat": 100.06038545673911,
+        "away_team_threat": 101.1340215277507,
+        "momentum_index": 49.73318441424309
+    },
+    {
+        "time_in_match": "43:04",
+        "home_team_threat": 100.07901244143662,
+        "away_team_threat": 101.10823669486201,
+        "momentum_index": 49.74421235494697
+    },
+    {
+        "time_in_match": "43:09",
+        "home_team_threat": 100.07721589476736,
+        "away_team_threat": 101.08303814502955,
+        "momentum_index": 49.74999478523645
+    },
+    {
+        "time_in_match": "43:14",
+        "home_team_threat": 100.11546019710715,
+        "away_team_threat": 101.05841254763278,
+        "momentum_index": 49.765637471292784
+    },
+    {
+        "time_in_match": "43:19",
+        "home_team_threat": 99.91283491900188,
+        "away_team_threat": 101.03434687515639,
+        "momentum_index": 49.72094359668519
+    },
+    {
+        "time_in_match": "43:23",
+        "home_team_threat": 99.91442409127174,
+        "away_team_threat": 101.16548891790309,
+        "momentum_index": 49.68891352499882
+    },
+    {
+        "time_in_match": "43:28",
+        "home_team_threat": 99.93636987488507,
+        "away_team_threat": 101.13898859472023,
+        "momentum_index": 49.70095323241288
+    },
+    {
+        "time_in_match": "43:33",
+        "home_team_threat": 99.8878166658874,
+        "away_team_threat": 101.11122668761249,
+        "momentum_index": 49.69566770037471
+    },
+    {
+        "time_in_match": "43:38",
+        "home_team_threat": 99.90036743626713,
+        "away_team_threat": 101.52409601731806,
+        "momentum_index": 49.59693858600619
+    },
+    {
+        "time_in_match": "43:43",
+        "home_team_threat": 99.90263283330172,
+        "away_team_threat": 102.93447083151798,
+        "momentum_index": 49.25264215879698
+    },
+    {
+        "time_in_match": "43:48",
+        "home_team_threat": 99.90484672083448,
+        "away_team_threat": 102.86277722549424,
+        "momentum_index": 49.270610749612885
+    },
+    {
+        "time_in_match": "43:52",
+        "home_team_threat": 99.90658153196418,
+        "away_team_threat": 102.8105837768158,
+        "momentum_index": 49.28373055127615
+    },
+    {
+        "time_in_match": "43:57",
+        "home_team_threat": 99.90745714907766,
+        "away_team_threat": 102.74667808258393,
+        "momentum_index": 49.29949099477771
+    },
+    {
+        "time_in_match": "44:02",
+        "home_team_threat": 99.90831858668335,
+        "away_team_threat": 102.68671095904918,
+        "momentum_index": 49.314298978954305
+    },
+    {
+        "time_in_match": "44:07",
+        "home_team_threat": 99.9104031943063,
+        "away_team_threat": 102.6256218250213,
+        "momentum_index": 49.329694894906744
+    },
+    {
+        "time_in_match": "44:12",
+        "home_team_threat": 99.91244040312962,
+        "away_team_threat": 102.56592170616965,
+        "momentum_index": 49.34474941534551
+    },
+    {
+        "time_in_match": "44:17",
+        "home_team_threat": 99.91443129088428,
+        "away_team_threat": 102.50757901973913,
+        "momentum_index": 49.3594699200755
+    },
+    {
+        "time_in_match": "44:21",
+        "home_team_threat": 99.91599135849548,
+        "away_team_threat": 102.46186145718893,
+        "momentum_index": 49.371010695273036
+    },
+    {
+        "time_in_match": "44:26",
+        "home_team_threat": 99.9179015063449,
+        "away_team_threat": 102.40588484235813,
+        "momentum_index": 49.38514808839006
+    },
+    {
+        "time_in_match": "44:31",
+        "home_team_threat": 99.93219579186473,
+        "away_team_threat": 102.35118099671539,
+        "momentum_index": 49.402080081108465
+    },
+    {
+        "time_in_match": "44:36",
+        "home_team_threat": 99.93373749114743,
+        "away_team_threat": 102.29647822368179,
+        "momentum_index": 49.41582895409998
+    },
+    {
+        "time_in_match": "44:41",
+        "home_team_threat": 99.9352441360177,
+        "away_team_threat": 102.24426201280652,
+        "momentum_index": 49.4289683655946
+    },
+    {
+        "time_in_match": "44:46",
+        "home_team_threat": 99.93671652352576,
+        "away_team_threat": 102.19323306887328,
+        "momentum_index": 49.44181538908562
+    },
+    {
+        "time_in_match": "44:50",
+        "home_team_threat": 99.937870292269,
+        "away_team_threat": 102.15137385398145,
+        "momentum_index": 49.4523450342289
+    },
+    {
+        "time_in_match": "44:55",
+        "home_team_threat": 99.93928296750671,
+        "away_team_threat": 102.1024569560668,
+        "momentum_index": 49.46467151060509
+    },
+    {
+        "time_in_match": "45:00",
+        "home_team_threat": 99.94066352201826,
+        "away_team_threat": 102.05278817145904,
+        "momentum_index": 49.47717992050408
+    },
+    {
+        "time_in_match": "45:04",
+        "home_team_threat": 99.90174533005786,
+        "away_team_threat": 103.5453622435452,
+        "momentum_index": 49.1045296841664
+    },
+    {
+        "time_in_match": "45+0:05",
+        "home_team_threat": 99.96219626359738,
+        "away_team_threat": 101.9590910297083,
+        "momentum_index": 49.50552643733637
+    },
+    {
+        "time_in_match": "45:09",
+        "home_team_threat": 99.90288549200052,
+        "away_team_threat": 103.4933733649858,
+        "momentum_index": 49.11736629445337
+    },
+    {
+        "time_in_match": "45+0:10",
+        "home_team_threat": 99.96333119283949,
+        "away_team_threat": 101.90734075079037,
+        "momentum_index": 49.5185012416034
+    },
+    {
+        "time_in_match": "45:13",
+        "home_team_threat": 99.90383374678058,
+        "away_team_threat": 103.45120023285192,
+        "momentum_index": 49.127789851903394
+    },
+    {
+        "time_in_match": "45+0:14",
+        "home_team_threat": 99.96427509566475,
+        "away_team_threat": 101.86536116955597,
+        "momentum_index": 49.52903693702519
+    },
+    {
+        "time_in_match": "45:18",
+        "home_team_threat": 99.90492642331411,
+        "away_team_threat": 103.43947099990649,
+        "momentum_index": 49.130896985266844
+    },
+    {
+        "time_in_match": "45+0:19",
+        "home_team_threat": 99.88536275742901,
+        "away_team_threat": 101.81368576717682,
+        "momentum_index": 49.5219801422334
+    },
+    {
+        "time_in_match": "45:23",
+        "home_team_threat": 99.90745279537656,
+        "away_team_threat": 103.39061909535727,
+        "momentum_index": 49.1433351365347
+    },
+    {
+        "time_in_match": "45+0:24",
+        "home_team_threat": 99.88787753486803,
+        "away_team_threat": 101.76505806532697,
+        "momentum_index": 49.53455164813948
+    },
+    {
+        "time_in_match": "45:28",
+        "home_team_threat": 99.90992172401326,
+        "away_team_threat": 103.36788401450278,
+        "momentum_index": 49.1494491299907
+    },
+    {
+        "time_in_match": "45+0:29",
+        "home_team_threat": 99.89033513251428,
+        "away_team_threat": 101.71242732567563,
+        "momentum_index": 49.54809840625591
+    },
+    {
+        "time_in_match": "45:33",
+        "home_team_threat": 99.91233451534505,
+        "away_team_threat": 103.32120677280052,
+        "momentum_index": 49.16134112611305
+    },
+    {
+        "time_in_match": "45+0:34",
+        "home_team_threat": 99.89273685049416,
+        "away_team_threat": 101.66596430619643,
+        "momentum_index": 49.56012133300965
+    },
+    {
+        "time_in_match": "45:38",
+        "home_team_threat": 99.91469244579478,
+        "away_team_threat": 103.27559085563897,
+        "momentum_index": 49.172967733683834
+    },
+    {
+        "time_in_match": "45+0:39",
+        "home_team_threat": 99.89508395937254,
+        "away_team_threat": 101.6205577403765,
+        "momentum_index": 49.57187596792738
+    },
+    {
+        "time_in_match": "45:42",
+        "home_team_threat": 99.91652185642415,
+        "away_team_threat": 103.23834764568574,
+        "momentum_index": 49.18244002779685
+    },
+    {
+        "time_in_match": "45+0:43",
+        "home_team_threat": 99.87690497403855,
+        "away_team_threat": 101.58348545575943,
+        "momentum_index": 49.576447638644986
+    },
+    {
+        "time_in_match": "45:47",
+        "home_team_threat": 99.91914921220803,
+        "away_team_threat": 103.19461573927146,
+        "momentum_index": 49.19368671841471
+    },
+    {
+        "time_in_match": "45+0:48",
+        "home_team_threat": 99.8795202717406,
+        "away_team_threat": 101.55995425413974,
+        "momentum_index": 49.58289357476872
+    },
+    {
+        "time_in_match": "45:52",
+        "home_team_threat": 99.92171682844706,
+        "away_team_threat": 103.18151355271905,
+        "momentum_index": 49.19750249216758
+    },
+    {
+        "time_in_match": "45+0:53",
+        "home_team_threat": 99.88207610406874,
+        "away_team_threat": 101.51691219923664,
+        "momentum_index": 49.594130013030195
+    },
+    {
+        "time_in_match": "45:57",
+        "home_team_threat": 99.94483820143529,
+        "away_team_threat": 103.21925622995082,
+        "momentum_index": 49.194144507256574
+    },
+    {
+        "time_in_match": "45+0:58",
+        "home_team_threat": 99.91509136299068,
+        "away_team_threat": 101.45448165885898,
+        "momentum_index": 49.61776988629229
+    }
+]

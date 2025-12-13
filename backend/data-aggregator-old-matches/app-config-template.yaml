@@ -1,0 +1,8 @@
+mongo:
+  uri: ""
+  db_name: "match_stats_db_test"
+
+match:
+  home_team: "Team A"
+  away_team: "Team B"
+  url: "http://example.com/match-data"

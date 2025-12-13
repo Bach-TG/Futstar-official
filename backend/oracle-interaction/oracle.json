@@ -1,0 +1,531 @@
+{
+  "address": "4gh2quPxDSyQx39GPSfU86rGcg6gcygux4dUZhD9aC9n",
+  "metadata": {
+    "name": "oracle",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "close_score_group",
+      "discriminator": [
+        173,
+        70,
+        198,
+        106,
+        196,
+        75,
+        85,
+        21
+      ],
+      "accounts": [
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "global_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  108,
+                  111,
+                  98,
+                  97,
+                  108,
+                  45,
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "score_group",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  108,
+                  111,
+                  98,
+                  97,
+                  108,
+                  45,
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "score_group"
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "end_match",
+      "discriminator": [
+        34,
+        116,
+        122,
+        191,
+        100,
+        222,
+        20,
+        117
+      ],
+      "accounts": [
+        {
+          "name": "validator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "global_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  108,
+                  111,
+                  98,
+                  97,
+                  108,
+                  45,
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "score_group",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  99,
+                  111,
+                  114,
+                  101,
+                  45,
+                  103,
+                  114,
+                  111,
+                  117,
+                  112
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "score_group_id"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "match_id",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "init_global_config",
+      "discriminator": [
+        140,
+        136,
+        214,
+        48,
+        87,
+        0,
+        120,
+        255
+      ],
+      "accounts": [
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "global_config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  108,
+                  111,
+                  98,
+                  97,
+                  108,
+                  45,
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "admin",
+          "type": "pubkey"
+        },
+        {
+          "name": "oracle_validator",
+          "type": "pubkey"
+        }
+      ]
+    },
+    {
+      "name": "init_score_group",
+      "discriminator": [
+        39,
+        15,
+        214,
+        155,
+        127,
+        99,
+        188,
+        10
+      ],
+      "accounts": [
+        {
+          "name": "validator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "global_config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  108,
+                  111,
+                  98,
+                  97,
+                  108,
+                  45,
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "score_group",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  99,
+                  111,
+                  114,
+                  101,
+                  45,
+                  103,
+                  114,
+                  111,
+                  117,
+                  112
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "match_id"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "match_id",
+          "type": "u64"
+        },
+        {
+          "name": "first_score",
+          "type": "u8"
+        },
+        {
+          "name": "start_timestamp",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "update_score_group",
+      "discriminator": [
+        69,
+        118,
+        126,
+        70,
+        174,
+        56,
+        115,
+        249
+      ],
+      "accounts": [
+        {
+          "name": "validator",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "global_config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  108,
+                  111,
+                  98,
+                  97,
+                  108,
+                  45,
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "score_group",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  99,
+                  111,
+                  114,
+                  101,
+                  45,
+                  103,
+                  114,
+                  111,
+                  117,
+                  112
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "match_id"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "match_id",
+          "type": "u64"
+        },
+        {
+          "name": "scores",
+          "type": "bytes"
+        },
+        {
+          "name": "timestamp",
+          "type": {
+            "vec": "u64"
+          }
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "GlobalConfig",
+      "discriminator": [
+        149,
+        8,
+        156,
+        202,
+        160,
+        252,
+        176,
+        217
+      ]
+    },
+    {
+      "name": "ScoreGroup",
+      "discriminator": [
+        35,
+        227,
+        44,
+        213,
+        184,
+        40,
+        112,
+        178
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "InvalidTimestamp",
+      "msg": "Timestamp is invalid"
+    },
+    {
+      "code": 6001,
+      "name": "InvalidInput",
+      "msg": "Invalid Input"
+    },
+    {
+      "code": 6002,
+      "name": "MatchEnded",
+      "msg": "Match has ended"
+    },
+    {
+      "code": 6003,
+      "name": "NotAuthorizedValidator",
+      "msg": "Not authorized validator"
+    },
+    {
+      "code": 6004,
+      "name": "MatchIsInProgress",
+      "msg": "Match is in progress"
+    }
+  ],
+  "types": [
+    {
+      "name": "GlobalConfig",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "admin",
+            "type": "pubkey"
+          },
+          {
+            "name": "oracle_validator",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ScoreGroup",
+      "serialization": "bytemuck",
+      "repr": {
+        "kind": "c"
+      },
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "score_group",
+            "type": {
+              "array": [
+                "u8",
+                9000
+              ]
+            }
+          },
+          {
+            "name": "match_id",
+            "type": "u64"
+          },
+          {
+            "name": "start_timestamp",
+            "type": "u64"
+          },
+          {
+            "name": "current_index",
+            "type": "u64"
+          },
+          {
+            "name": "last_update",
+            "type": "u64"
+          },
+          {
+            "name": "is_ended",
+            "type": "u8"
+          },
+          {
+            "name": "padding",
+            "type": {
+              "array": [
+                "u8",
+                7
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

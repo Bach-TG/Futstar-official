@@ -1,0 +1,13 @@
+mongo:
+  uri: ""
+  db_name: ""
+
+redis:
+  host: ""
+  port: ""
+
+data_provider:
+  host: ""
+  port: ""
+  domain: "" 
+  use: ""   # ["ip", "domain"]
